@@ -1,0 +1,108 @@
+body,
+html {
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #E6F7FF 100%);
+}
+
+.download-container,
+.download-content {
+    /* background-color: #eee; */
+    max-width: 414px;
+    margin: 0 auto;
+}
+
+.flex-box-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -moz-box-align: center;
+    align-items: center;
+}
+
+
+/* css  */
+
+.download-container {
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    padding-bottom: 0.2rem;
+    overflow: hidden;
+}
+
+.download-content {
+    width: 100%;
+    height: 6.1rem;
+    /* padding-top: 0.48rem; */
+    /* justify-content: flex-start; */
+    background-image: url(../../images/app-download/dl-zt-img@3x.png);
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.download-logo {
+    width: 0.99rem;
+    height: 0.44rem;
+}
+
+.download-btn {
+    width: 2.16rem;
+    height: 0.66rem;
+    display: block;
+    background-image: url(../../images/app-download/dl-dl-btn@3x.png);
+    background-size: 100% 100%;
+}
+
+.slogin {
+    height: 0.34rem;
+    font-size: 0.34rem;
+    font-weight: 600;
+    color: #1A8CFF;
+    letter-spacing: 0;
+    line-height: 0.34rem;
+    margin-top: 3.9rem;
+}
+
+.msg {
+    height: 0.18rem;
+    font-size: 0.18rem;
+    color: #ABABAB;
+    line-height: 0.18rem;
+    margin-top: 0.12rem;
+}
+
+.position-bg {
+    border-radius: 50%;
+    position: absolute;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #BDE7FF 100%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.position-bg1 {
+    width: 1.06rem;
+    height: 1.06rem;
+    top: 5.21rem;
+    left: -0.53rem;
+}
+
+.position-bg2 {
+    width: 0.8rem;
+    height: 0.8rem;
+    top: 0.8rem;
+    right: -0.4rem;
+}

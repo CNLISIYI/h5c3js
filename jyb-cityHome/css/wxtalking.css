@@ -1,0 +1,21 @@
+.unclick {pointer-events: none;}
+.wxtalking-content {width:100vw;height:100vh;background:#F5F6F7;padding-top:1px;}
+.wxtalking-content .icon-cross-no-bg {width:28px;height:28px;display:inline-block;-webkit-mask:url(https://static.jiaoyubao.cn/images/common/icon-cross-no-bg.svg) no-repeat;mask:url(https://static.jiaoyubao.cn/images/common/icon-cross-no-bg.svg) no-repeat;background-color:#000;-webkit-mask-size:100% 100%;mask-size:100% 100%;}
+.wxtalking-content .sub-disabled {pointer-events:none;background:#94D4FF;}
+.wxtalking-content .list-block .list-textarea {position:relative;margin:15px 0px;padding-bottom:18px;}
+.wxtalking-content .list-block .list-textarea textarea {width:100vw;height:91px;color:#262626;line-height:24px;}
+.wxtalking-content .list-block .item-title {margin-right:0px;}
+.wxtalking-content .list-block .item-input {position:relative;}
+.wxtalking-content .list-block .send-yan {position:absolute;right:0;top:0;}
+.wxtalking-content .list-block .text-holder {position:absolute;right:15px;bottom:18px;font-size:13px;line-height:1;color:#ABABAB;background:rgba(255,255,255,0);}
+.wxtalking-content .list-block .color-red {color:#FE1940;}
+.wxtalking-content .list-block .before-send input {width:100% !important;}
+.wxtalking-content .list-block li,.wxtalking-content .list-block input,.wxtalking-content .list-block textarea {font-size:16px;}
+.wxtalking-content .list-block input::-webkit-input-placeholder,.wxtalking-content .list-block textarea::-webkit-input-placeholder {color:#ABABAB;font-size:16px;}
+.wxtalking-content .list-block input::-moz-placeholder,.wxtalking-content .list-block textarea::-moz-placeholder {/* Mozilla Firefox 19+ */  color:#ABABAB;font-size:16px;}
+.wxtalking-content .list-block input:-moz-placeholder textarea:-moz-placeholder {/* Mozilla Firefox 4 to 18 */  color:#ABABAB;font-size:16px;}
+.wxtalking-content .list-block input:-ms-input-placeholder textarea:-ms-input-placeholder {/* Internet Explorer 10-11 */  color:#ABABAB;font-size:16px;}
+@media screen and (max-width:359px) {.list-block .item-title {width:76px;}
+.pop-yan .send-yan::before {margin-right:6px;}
+.pop-yan .send-yan::after {margin-right:13px;}
+}

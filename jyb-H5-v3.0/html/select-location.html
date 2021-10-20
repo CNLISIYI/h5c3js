@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="applicable-device" content="mobile">
+    <title> 选择地址 </title>
+    <!-- <script src="//static.jiaoyubao.cn/js/uaredirect.js" type="text/javascript"></script> -->
+    <!-- <script type="text/javascript">        pcredirect("//jn.jiaoyubao.cn/");</script> -->
+    <!-- 解决移动端click事件300ms延迟问题 -->
+    <script type='application/javascript' src="https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js" charset="utf-8"></script>
+    <!-- phone reset -->
+    <link rel="stylesheet" type="text/css" href="https://static.jiaoyubao.cn/css/web/m-reset.css" charset="utf-8">
+    <!-- TODO 更换文件地址 -->
+    <link rel="stylesheet" type="text/css" href="https://static.jiaoyubao.cn/css/web/m-jyb-ui.css">
+    <!-- 项目样式表 -->
+    <link rel="stylesheet" type="text/css" href="../css/jyb-H5-v3.0.css">
+</head>
+<body>
+    <div class="m-common-container m-select-location flex-box-column">
+        <!-- 通用头部 -->
+        <header class="m-common-header">
+            <ul class="m-jyb-header m-jyb-header-fixed flex-box m-header-location_search border-bottom-1px">
+                <li class="m-header-back flex-box"><a class="m-common-icon icon_left_no_bg" href="javascript:history.back(-1)"></a></li>
+                <li class="m-header-input flex-box flex-1 ml10 mr12 pr8l14">
+                    <span class="m-common-icon icon_map_linear"></span>
+                    <span class="m-location-city ellipsis-1">济南</span>
+                    <span class="m-common-icon icon_search_linear"></span>
+                    <a class="m-loction-link flex-box flex-1" href="./search-location.html">
+                        <input class="m_header_input flex-1" style="width:100px"  type="search" readonly placeholder="小区/写字楼/商圈等" name="" onsearch="">
+                    </a>
+                </li>
+            </ul>
+        </header>
+        <main class="m-common-main flex-1">
+            <!-- 1.基于当前的定位，选择区域、商圈 -->
+            <div class="m-location-based-cur">
+                <!-- 当前定位 -->
+                <div class="m-location-current">
+                    <span class="m-location-subtitle">当前定位</span>
+                    <div class="m-location-cur-inner flex-box">
+                        <span class="m-location-cur-position flex-1">齐鲁师范学院</span>
+                        <a href="javascript:;" class="m-location-cur-reset flex-box">
+                            <span class="m-common-icon icon_distance_block"></span>
+                            <span>重新定位</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- 更多位置 -->
+                <div class="m-location-more">
+                    <span class="m-location-subtitle">更多位置</span>
+                    <ul class="m-location-area clearfloat">
+                        <li class="active"><a href="javascript:;">历下区</a></li>
+                        <li><a href="javascript:;">天桥区</a></li>
+                        <li><a href="javascript:;">市中区</a></li>
+                        <li><a href="javascript:;">槐荫区</a></li>
+                        <li><a href="javascript:;">高新区</a></li>
+                        <li><a href="javascript:;">长清区</a></li>
+                        <li><a href="javascript:;">章丘区</a></li>
+                        <li><a href="javascript:;">平阴县</a></li>
+                        <li><a href="javascript:;">济阳县</a></li>
+                    </ul>
+                    <div class="m-location-place-container">
+                        <ul class="m-location-place clearfloat">
+                            <li class="active"><a href="">千佛山</a></li>
+                            <li><a href="">解放桥</a></li>
+                            <li><a href="">阳光舜城</a></li>
+                            <li><a href="">燕山立交桥</a></li>
+                            <li><a href="">甸柳庄</a></li>
+                            <li><a href="">东关</a></li>
+                            <li><a href="">大明湖</a></li>
+                            <li><a href="">山师</a></li>
+                            <li><a href="">姚家</a></li>
+                            <li><a href="">花园庄</a></li>
+                        </ul>
+                        <ul class="m-location-place clearfloat" style="display: none;">
+                            <li><a href="">千佛山</a></li>
+                            <li><a href="">解放桥</a></li>
+                            <li><a href="">阳光舜城</a></li>
+                            <li><a href="">燕山立交桥</a></li>
+                            <li><a href="">章丘区</a></li>
+                            <li><a href="">平阴县</a></li>
+                            <li><a href="">济阳县</a></li>
+                        </ul>
+                        <ul class="m-location-place clearfloat" style="display: none;">
+                            <li><a href="">天桥区</a></li>
+                            <li><a href="">市中区</a></li>
+                            <li><a href="">槐荫区</a></li>
+                            <li><a href="">高新区</a></li>
+                            <li><a href="">东关</a></li>
+                            <li><a href="">大明湖</a></li>
+                            <li><a href="">山师</a></li>
+                            <li><a href="">姚家</a></li>
+                            <li><a href="">花园庄</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2.切换城市，选择区域、商圈 -->
+            <link rel="stylesheet" type="text/css" href="//static.jiaoyubao.cn/weui/weui.v2.css" charset="utf-8">
+            <div class="m-location-change-cur" style="display: none;">
+                <div class="m-location-select flex-box">
+                    <div class="m-location-select-area flex-1">
+                        <span class="m-location-subtitle">行政区</span>
+                        <a href="javascript:;" class="m-location-picker m-location-name">济南</a>
+                    </div>
+                    <div class="m-location-select-place flex-1">
+                        <span class="m-location-subtitle">商圈</span>
+                        <a href="javascript:;" class="m-location-picker m-location-name">千佛山</a>
+                    </div>
+                </div>
+                <a class="m-location-select-btn" href="javascript:;">确定</a>
+            </div>
+            <script src="//static.jiaoyubao.cn/weui/weui.min.js"></script>
+
+        </main>
+    </div>
+
+    <script type="text/javascript" src="https://static.jiaoyubao.cn/js/jquery/jquery.min.1.11.1.js" charset="utf-8"></script>
+    <!-- TODO m-jyb-ui.js 更换引用地址 -->
+    <script type="text/javascript" src="https://static.jiaoyubao.cn/js/web/m-jyb-ui.js"></script>
+    <script type="text/javascript" src="../js/m-location.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+.xuanke-success {
+  text-align: center;
+}
+.xuanke-success .icon-kuaizhuang2 {
+  display: inline-block;
+  margin: 28px auto 20px;
+  font-size: 72px;
+  color: #0082ff;
+  line-height: 1;
+}
+.xuanke-success h4 {
+  font-size: 18px;
+  color: #595959;
+  line-height: 1;
+  font-weight: 600;
+}
+.xuanke-success p {
+  margin: 12px auto 20px;
+  font-size: 14px;
+  color: #8C8C8C;
+  text-align: center;
+  line-height: 20px;
+}
+#lottie {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#lottie svg {
+  width: 180px !important;
+  height: 180px !important;
+}
+.chome-teacher-cont .xuanke-success .icon-kuaizhuang2 {
+  margin-top: 42px;
+}
+.chome-teacher-cont .xuanke-success p {
+  margin-bottom: 24px;
+}
+.bxk-banner .xuanke-success {
+  height: 368px;
+}
+.bxk-banner .xuanke-success .icon-kuaizhuang2 {
+  font-size: 80px;
+  margin: 38px auto 18px;
+}
+.bxk-banner .xuanke-success h4 {
+  font-size: 20px;
+}
+.bxk-banner .xuanke-success p {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 18px auto 29px;
+}
+.bxk-banner .xuanke-success .bxk-button {
+  width: 290px;
+  height: 76px;
+  margin-top: 15px;
+  margin-left: -4px;
+}
+.bxk-banner .xuanke-success .bxk-button a {
+  line-height: 66px;
+}

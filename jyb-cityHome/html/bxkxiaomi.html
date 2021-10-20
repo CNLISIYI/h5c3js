@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="mobile-agent" content="format=html5;url=https://m.jiaoyubao.cn/sjz/">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="applicable-device" content="pc">
+    <link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.jiaoyubao.cn/">
+    <script src="https://static.jiaoyubao.cn/js/uaredirect.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        uaredirect("//m.jiaoyubao.cn/");
+    </script>
+    <title> 帮选课 </title>
+    <link rel="stylesheet" type="text/css" href="https://static.jiaoyubao.cn/css/web/reset.css" charset="utf-8">
+    <link rel="stylesheet" href="https://static.jiaoyubao.cn/css/web/jyb-ui-v2.css" charset="utf-8">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_980246_x9m49ci2t8d.css" charset="utf-8">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_274560_ameghanpa3r.css" charset="utf-8">
+    <link rel="stylesheet" href="https://www.jiaoyubao.cn/css/topmodule2.0.css" />
+    <link rel="stylesheet" href="https://www.jiaoyubao.cn/css/navmodule.css" />
+    <link rel="stylesheet" href="../css/jyb-cityhome.css" charset="UTF-8" />
+</head>
+
+<body>
+    <div class="top-v2-container"></div>
+    <!-- 固定导航 -->
+    <div class="full-office-nav">
+        <div class="contWidth  clearfix reposition">
+            <a href="/" target="_blank" class="offices-nav-left"><img src="//static.jiaoyubao.cn/images/site/LOGO2.png"
+                    alt="教育宝" /></a>
+            <div class="offices-types-box">
+                <div class="offices-types-nav b-radius">全部分类<img class="office-types-i"
+                        src="//static.jiaoyubao.cn/images/site/fenlei_xiala.png" width="7" height="4" alt="机构类型全部分类" />
+                </div>
+            </div>
+            <div class="office-types-blank"></div>
+            <ul class="offices-nav-middle clearflow">
+                <li><a href="#" target="_blank">首页</a></li>
+                <li class="current"><a href="#" target="_blank">机构</a></li>
+                <li><a href="#" target="_blank">帮我选</a></li>
+                <li><a href="#" target="_blank">投诉帮</a></li>
+                <li><a href="#" target="_blank">自主招生</a></li>
+                <li><a href="#" target="_blank">云测评</a></li>
+                <li><a href="#" target="_blank">教育头条</a></li>
+                <div class="offices-nav-span"></div>
+            </ul>
+            <div class="offices-nav-right">
+                <div class="basic-form-group no-focus-nav">
+                    <div class="basic-input">
+                        <input type="text" class="form-control basic-text-default">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="chome-banner-container bxk-banner">
+        <ul class="banner-images">
+            <li>
+                <img src="../images/bxk/banner.jpg" alt="">
+            </li>
+        </ul>
+        <div class="banner-guwen-img"><img src="../images/bxk/banner_guwen@1x.png" alt=""></div>
+        <div class="banner-img"><img src="../images/bxk/banner_2@2x.png" alt=""></div>
+        <!-- 帮选课表单 -->
+        <div class="chome-xuanke-outer clearfix">
+            <div class="xuanke-bg">
+                <div class="xuanke-title">
+                    <h4>专属顾问帮选课服务</h4>
+                    <div class="xk-title-b">
+                        <div class="title-number">
+                            <span>5</span><span>3</span><span>4</span><span>5</span><span>5</span>
+                        </div><span>人今日找到满意的课程</span>
+                    </div>
+                </div>
+                <div class="xuanke-after firisshow">
+                    <ul>
+                        <li>
+                            <input class="xk-name" type="text" placeholder="您的称呼">
+                            <span class="input-error">称呼不能为空</span>
+                        </li>
+                        <li>
+                            <input class="xk-lesson" type="text" placeholder="您想学习的课程">
+                            <span class="input-error">请输入课程名称</span>
+                        </li>
+                        <li>
+                            <input class="xk-phone" type="tel" placeholder="您的手机号码" maxlength="11">
+                            <span class="input-error">请输入正确的手机号</span>
+                        </li>
+                        <li class="sendcode-btn">
+                            <input class="xk-code" type="number" placeholder="输入验证码">
+                            <span class="input-error">验证码错误</span>
+                            <a href="javascript:;" class="get-code">获取验证码</a>
+                        </li>
+                    </ul>
+                    <div class="bxk-button">
+                        <a href="javascript:;">免费帮我选课</a>
+                    </div>
+                    <div class="bxk-bottom">
+                        <i class="control icon-kuaizhuang23"></i><span>您的个人信息保护中，仅平台可见</span>
+                    </div>
+                </div>
+                <div class="xuanke-success" style="display: none;">
+                    <!-- <span id="lottie"></span> -->
+                    <span class="control icon-kuaizhuang2"></span>
+                    <h4>选课预约成功</h4>
+                    <p>选课顾问会尽快与您联系<br>请保持手机流畅</p>
+                    <div class="bxk-button">
+                        <a href="javascript:;">确定</a>
+                    </div>
+                    <div class="bxk-bottom">
+                        <i class="control icon-kuaizhuang23"></i><span>您的个人信息保护中，仅平台可见</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 帮选课成功弹窗 -->
+    <!-- <div class="bxk-success-outer form-outer">
+        <div class="bxk-success-box">
+            <span class="control icon-xianxing2"></span>
+            <h4>预约成功</h4>
+            <button>确定</button>
+            <p>* 预约后一个工作日内，顾问会与您联系。</p>
+        </div>
+    </div> -->
+    <!-- 帮选课介绍 -->
+    <div class="bxk-introduce-outer">
+        <ul class="title-animate">
+            <li>
+                <div class="bxk-intro-img"><i class="icon-jiaoyuxianxing control"></i></div>
+                <h4>10年大平台</h4>
+                <div class="bxk-intro-line"></div>
+                <p><em class="fontArial">10</em>年专注<em class="fontArial">1</em>件事，已帮助<span
+                        class="fontArial bxk-i-student">500</span>多万学员轻松找机构、放心选课程</p>
+            </li>
+            <li>
+                <div class="bxk-intro-img"><i class="icon-xianxing19 control"></i></div>
+                <h4>教育资源丰富</h4>
+                <div class="bxk-intro-line"></div>
+                <p>覆盖全国<em class="fontArial">30</em>多个省会、<em class="fontArial">100</em>多个地级市、<span
+                        class="fontArial bxk-i-agency">6</span>万多家教育机构、<span
+                        class="fontArial bxk-i-lesson">60</span>多万课程
+                </p>
+            </li>
+            <li>
+                <div class="bxk-intro-img"><i class="icon-kecheng-xianxing control"></i></div>
+                <h4>数据真实靠谱</h4>
+                <div class="bxk-intro-line"></div>
+                <p>通过公正、透明、真实的平台机制，已积累<span class="fontArial bxk-i-fee">50</span>多万条真实学费和<span
+                        class="fontArial bxk-i-comment">40</span>多万条真实评价</p>
+            </li>
+            <li>
+                <div class="bxk-intro-img"><i class="icon-kefuxianxing control"></i></div>
+                <h4>平台顾问1对1</h4>
+                <div class="bxk-intro-line"></div>
+                <p><em class="fontArial">100</em>多名资深的平台顾问，站在第三方角度，精心为您定制1对1的个性化学习方案</p>
+            </li>
+        </ul>
+    </div>
+    <!-- 服务流程 -->
+    <div class="bxk-process">
+        <div class="title-animate">
+            <h3>服务流程</h3>
+            <div class="bxk-process-item">
+                <div class="s-half-circle"></div>
+                <div class="s-circle">01</div>
+                <h4>量身定制</h4>
+                <div class="dashed-line"></div>
+                <p>平台顾问根据您的实际需求提供个性化建议和方案</p>
+            </div><span class="icon-wudi2 control"></span>
+            <div class="bxk-process-item">
+                <div class="s-half-circle"></div>
+                <div class="s-circle">02</div>
+                <h4>代您咨询</h4>
+                <div class="dashed-line"></div>
+                <p>如您不便，平台顾问将直接代您咨询机构和课程</p>
+            </div><span class="icon-wudi2 control"></span>
+            <div class="bxk-process-item">
+                <div class="s-half-circle"></div>
+                <div class="s-circle">03</div>
+                <h4>预约试听</h4>
+                <div class="dashed-line"></div>
+                <p>经过初步咨询和筛选后，教育宝将协助您预约试听</p>
+            </div><span class="icon-wudi2 control"></span>
+            <div class="bxk-process-item">
+                <div class="s-half-circle"></div>
+                <div class="s-circle">04</div>
+                <h4>对比分析</h4>
+                <div class="dashed-line"></div>
+                <p>您考察、试听后，教育宝帮您进一步对比分析，以便决策</p>
+            </div>
+            <button class="bxk-process-btn">免费帮我选课</button>
+        </div>
+    </div>
+    <!-- 学生评论 -->
+    <div class="bxk-comment-outer">
+        <div class="bxk-marks-l bxk-marks">
+            <img src="../images/bxk/doublemarks1.png" alt="">
+        </div>
+        <div class="bxk-marks-r bxk-marks">
+            <img src="../images/bxk/doublemarks2.png" alt="">
+        </div>
+        <div class="comment-animate">
+            <div class="bxk-comment-title">
+                <h2>他们在帮选课找到了合适的课程</h2>
+                <p>顾问已累计帮助<span class="fontArial bxk-c-student">22543</span>位学员找到合适的课程</p>
+            </div>
+            <div class="bxk-comment-bg">
+                <img src="../images/bxk/BG_1.png" alt="">
+            </div>
+        </div>
+        <div class="bxk-students-box">
+            <div class="bxk-stu-item stuitem-1">
+                <div class="stu-item-head">
+                    <img src="../images/bxk/header/user1.png" alt="">
+                </div>
+                <div class="stu-item-name">
+                    <span>谢*飞</span>
+                    <p>顾问许双凤为我找到了合适的精算会计课程</p>
+                </div>
+            </div>
+            <div class="bxk-stu-item stuitem-2">
+                <div class="stu-item-head">
+                    <img src="../images/bxk/header/user2.png" alt="">
+                </div>
+                <div class="stu-item-name">
+                    <span>冯*莲</span>
+                    <p>顾问黄翔为我找到了合适的土建系统实训周末课程</p>
+                </div>
+            </div>
+            <div class="bxk-stu-item stuitem-3">
+                <div class="stu-item-head">
+                    <img src="../images/bxk/header/user3.png" alt="">
+                </div>
+                <div class="stu-item-name">
+                    <span>翟*超</span>
+                    <p>顾问谢腾飞为我找到了合适的一级建造师面授课程</p>
+                </div>
+            </div>
+            <div class="bxk-stu-item stuitem-4">
+                <div class="stu-item-head">
+                    <img src="../images/bxk/header/user4.png" alt="">
+                </div>
+                <div class="stu-item-name">
+                    <span>张*涵</span>
+                    <p>顾问黄巍为我找到了合适的六年级数学培优课程</p>
+                </div>
+            </div>
+
+            <div class="bxk-stu-item stuitem-5">
+                <div class="stu-item-head">
+                    <img src="../images/bxk/header/user5.png" alt="">
+                </div>
+                <div class="stu-item-name">
+                    <span>刘*森</span>
+                    <p>顾问黄巍为我找到了合适的1对3物理辅导课程</p>
+                </div>
+            </div>
+            <div class="bxk-stu-item stuitem-6">
+                <div class="stu-item-head">
+                    <img src="../images/bxk/header/user6.png" alt="">
+                </div>
+                <div class="stu-item-name">
+                    <span>赵*彰</span>
+                    <p>顾问丁玉丹为我找到了合适的阅读作文国学课程</p>
+                </div>
+            </div>
+            <div class="bxk-stu-item stuitem-7">
+                <div class="stu-item-head">
+                    <img src="../images/bxk/header/user7.png" alt="">
+                </div>
+                <div class="stu-item-name">
+                    <span>王*</span>
+                    <p>顾问张军平为我找到了合适的小升初辅导课程</p>
+                </div>
+            </div>
+            <div class="bxk-stu-item stuitem-8">
+                <div class="stu-item-head">
+                    <img src="../images/bxk/header/user8.png" alt="">
+                </div>
+                <div class="stu-item-name">
+                    <span>许*谣</span>
+                    <p>顾问姬忠春为我找到了合适的TCF/TEF考前强化课程</p>
+                </div>
+            </div>
+            <div class="bxk-stu-item stuitem-9">
+                <div class="stu-item-head">
+                    <img src="../images/bxk/header/user9.png" alt="">
+                </div>
+                <div class="stu-item-name">
+                    <span>张*茹</span>
+                    <p>顾问马真真为我找到了合适的小学新概念辅导课程</p>
+                </div>
+            </div>
+            <div class="bxk-stu-item stuitem-10">
+                <div class="stu-item-head">
+                    <img src="../images/bxk/header/user10.png" alt="">
+                </div>
+                <div class="stu-item-name">
+                    <span>陈*朦</span>
+                    <p>顾问王青为我找到了合适的小学4-6年纪语文特色课程</p>
+                </div>
+            </div>
+            <div class="bxk-stu-item stuitem-11">
+                <div class="stu-item-head">
+                    <img src="../images/bxk/header/user11.png" alt="">
+                </div>
+                <div class="stu-item-name">
+                    <span>于*廉</span>
+                    <p>顾问丁玉丹为我找到了合适的财税主管班培训课程</p>
+                </div>
+            </div>
+            <div class="bxk-stu-item stuitem-12">
+                <div class="stu-item-head">
+                    <img src="../images/bxk/header/user12.png" alt="">
+                </div>
+                <div class="stu-item-name">
+                    <span>戚*</span>
+                    <p>顾问邢文平为我找到了合适的金融培训实践课程</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--平台顾问-->
+    <div class="chome-eval-container bgfa chome-teacher-container bxk-teachers">
+        <div class="bxk-comment-title title-animate">
+            <h2>资深专业平台顾问，累计服务<span class="fontArial bxk-t-user">400</span>+万用户</h2>
+            <p>根据您的实际需求，站在第三方角度快速为您定制一对一的个性化解决方案</p>
+        </div>
+        <div class="chome-contWidth chome-teacher-cont ">
+            <div class="hd">
+                <div class="prev button-prev "><i class="control icon-xianxing5 swiper-btn"></i></div>
+                <div class="next button-next "><i class="control icon-xianxing4 swiper-btn"></i></div>
+            </div>
+            <div class="bd">
+                <ul class="clearfloat swiper-wrapper">
+                    <li class="swiper-slide">
+                        <div class="teacher-item-avatar">
+                            <img src="../images/kf/kf-01-img.png" alt="" />
+                        </div>
+                        <div class="teacher-item-intro">
+                            <h4 class="teacher-item-name">丁玉丹</h4>
+                            <p class="teacher-item-age">服务5年</p>
+                            <div class="teacher-item-data mt30">
+                                <i class="control icon-yonghukuaizhuang"></i>
+                                <span class="pop">服务用户数：</span>
+                                <span class="fontArial pop serve-number">23689</span>
+                            </div>
+                            <div class="teacher-item-data">
+                                <i class="control icon-zankuaizhuang"></i>
+                                <span class="pop">好评率：</span>
+                                <span class="fontArial pop">100%</span>
+                            </div>
+                            <button class="teacher-item-btn" data-staffclass="3912632">让TA帮我选课</button>
+                        </div>
+                        <div class="teacher-bxk-outer" style="display:none;"></div>
+                        <div class="xuanke-after" style="display: none;">
+                            <div class="xuanke-hide">
+                                <img src="../images/jt-down.svg" alt="">
+                            </div>
+                            <div class="bxk-ul">
+                                <div class="bxk-li">
+                                    <input class="xk-name" type="text" placeholder="您的称呼">
+                                    <span class="input-error">称呼不能为空</span>
+                                </div>
+                                <div class="bxk-li">
+                                    <input class="xk-lesson" type="text" placeholder="您想学习的课程">
+                                    <span class="input-error">请输入课程名称</span>
+                                </div>
+                                <div class="bxk-li">
+                                    <input class="xk-phone" type="tel" placeholder="您的手机号码" maxlength="11">
+                                    <span class="input-error">请输入正确的手机号</span>
+                                </div>
+                                <div class="sendcode-btn bxk-li">
+                                    <input class="xk-code" type="number" placeholder="输入验证码">
+                                    <span class="input-error">验证码错误</span>
+                                    <a href="javascript:;" class="get-code">获取验证码</a>
+                                </div>
+                            </div>
+                            <div class="bxk-button">
+                                <a href="javascript:;">免费帮我选课</a>
+                            </div>
+                            <div class="bxk-bottom">
+                                <i class="control icon-kuaizhuang23"></i><span>您的个人信息保护中，仅平台可见</span>
+                            </div>
+                        </div>
+                        <div class="xuanke-success" style="display:none;">
+                            <!-- <span id="lottie"></span> -->
+                            <span class="control icon-kuaizhuang2"></span>
+                            <h4>选课预约成功</h4>
+                            <p>选课顾问会尽快与您联系<br>请保持手机流畅</p>
+                            <div class="bxk-button">
+                                <a href="javascript:;">确定</a>
+                            </div>
+                            <div class="bxk-bottom">
+                                <i class="control icon-kuaizhuang23"></i><span>您的个人信息保护中，仅平台可见</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="teacher-item-avatar">
+                            <img src="../images/kf/kf-02-img.png" alt="" />
+                        </div>
+                        <div class="teacher-item-intro">
+                            <h4 class="teacher-item-name">黄巍</h4>
+                            <p class="teacher-item-age">服务6年</p>
+                            <div class="teacher-item-data mt30">
+                                <i class="control icon-yonghukuaizhuang"></i>
+                                <span class="pop">服务用户数：</span>
+                                <span class="fontArial pop serve-number">26780</span>
+                            </div>
+                            <div class="teacher-item-data">
+                                <i class="control icon-zankuaizhuang"></i>
+                                <span class="pop">好评率：</span>
+                                <span class="fontArial pop">100%</span>
+                            </div>
+                            <button class="teacher-item-btn" data-staffclass="2">让TA帮我选课</button>
+                        </div>
+                        <div class="teacher-bxk-outer" style="display: none;"></div>
+                        <div class="xuanke-after" style="display: none;">
+                            <div class="xuanke-hide">
+                                <img src="../images/jt-down.svg" alt="">
+                            </div>
+                            <div class="bxk-ul">
+                                <div class="bxk-li">
+                                    <input class="xk-name" type="text" placeholder="您的称呼">
+                                    <span class="input-error">称呼不能为空</span>
+                                </div>
+                                <div class="bxk-li">
+                                    <input class="xk-lesson" type="text" placeholder="您想学习的课程">
+                                    <span class="input-error">请输入课程名称</span>
+                                </div>
+                                <div class="bxk-li">
+                                    <input class="xk-phone" type="tel" placeholder="您的手机号码" maxlength="11">
+                                    <span class="input-error">请输入正确的手机号</span>
+                                </div>
+                                <div class="sendcode-btn bxk-li">
+                                    <input class="xk-code" type="number" placeholder="输入验证码">
+                                    <span class="input-error">验证码错误</span>
+                                    <a href="javascript:;" class="get-code">获取验证码</a>
+                                </div>
+                            </div>
+                            <div class="bxk-button">
+                                <a href="javascript:;">免费帮我选课</a>
+                            </div>
+                            <div class="bxk-bottom">
+                                <i class="control icon-kuaizhuang23"></i><span>您的个人信息保护中，仅平台可见</span>
+                            </div>
+                        </div>
+                        <div class="xuanke-success" style="display: none;">
+                            <!-- <span id="lottie"></span> -->
+                            <span class="control icon-kuaizhuang2"></span>
+                            <h4>选课预约成功</h4>
+                            <p>选课顾问会尽快与您联系<br>请保持手机流畅</p>
+                            <div class="bxk-button">
+                                <a href="javascript:;">确定</a>
+                            </div>
+                            <div class="bxk-bottom">
+                                <i class="control icon-kuaizhuang23"></i><span>您的个人信息保护中，仅平台可见</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="teacher-item-avatar">
+                            <img src="../images/kf/kf-03-img.png" alt="" />
+                        </div>
+                        <div class="teacher-item-intro">
+                            <h4 class="teacher-item-name">许双凤</h4>
+                            <p class="teacher-item-age">服务8年</p>
+                            <div class="teacher-item-data mt30">
+                                <i class="control icon-yonghukuaizhuang"></i>
+                                <span class="pop">服务用户数：</span>
+                                <span class="fontArial pop serve-number">35679</span>
+                            </div>
+                            <div class="teacher-item-data">
+                                <i class="control icon-zankuaizhuang"></i>
+                                <span class="pop">好评率：</span>
+                                <span class="fontArial pop">100%</span>
+                            </div>
+                            <button class="teacher-item-btn">让TA帮我选课</button>
+                        </div>
+                        <div class="teacher-bxk-outer" style="display: none;"></div>
+                        <div class="xuanke-after" style="display: none;">
+                            <div class="xuanke-hide">
+                                <img src="../images/jt-down.svg" alt="">
+                            </div>
+                            <div class="bxk-ul">
+                                <div class="bxk-li">
+                                    <input class="xk-name" type="text" placeholder="您的称呼">
+                                    <span class="input-error">称呼不能为空</span>
+                                </div>
+                                <div class="bxk-li">
+                                    <input class="xk-lesson" type="text" placeholder="您想学习的课程">
+                                    <span class="input-error">请输入课程名称</span>
+                                </div>
+                                <div class="bxk-li">
+                                    <input class="xk-phone" type="tel" placeholder="您的手机号码" maxlength="11">
+                                    <span class="input-error">请输入正确的手机号</span>
+                                </div>
+                                <div class="sendcode-btn bxk-li">
+                                    <input class="xk-code" type="number" placeholder="输入验证码">
+                                    <span class="input-error">验证码错误</span>
+                                    <a href="javascript:;" class="get-code">获取验证码</a>
+                                </div>
+                            </div>
+                            <div class="bxk-button">
+                                <a href="javascript:;">免费帮我选课</a>
+                            </div>
+                            <div class="bxk-bottom">
+                                <i class="control icon-kuaizhuang23"></i><span>您的个人信息保护中，仅平台可见</span>
+                            </div>
+                        </div>
+                        <div class="xuanke-success" style="display: none;">
+                            <!-- <span id="lottie"></span> -->
+                            <span class="control icon-kuaizhuang2"></span>
+                            <h4>选课预约成功</h4>
+                            <p>选课顾问会尽快与您联系<br>请保持手机流畅</p>
+                            <div class="bxk-button">
+                                <a href="javascript:;">确定</a>
+                            </div>
+                            <div class="bxk-bottom">
+                                <i class="control icon-kuaizhuang23"></i><span>您的个人信息保护中，仅平台可见</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="teacher-item-avatar">
+                            <img src="../images/kf/kf-04-img.png" alt="" />
+                        </div>
+                        <div class="teacher-item-intro">
+                            <h4 class="teacher-item-name">张军平</h4>
+                            <p class="teacher-item-age">服务7年</p>
+                            <div class="teacher-item-data mt30">
+                                <i class="control icon-yonghukuaizhuang"></i>
+                                <span class="pop">服务用户数：</span>
+                                <span class="fontArial pop serve-number">28609</span>
+                            </div>
+                            <div class="teacher-item-data">
+                                <i class="control icon-zankuaizhuang"></i>
+                                <span class="pop">好评率：</span>
+                                <span class="fontArial pop">100%</span>
+                            </div>
+                            <button class="teacher-item-btn">让TA帮我选课</button>
+                        </div>
+                        <div class="teacher-bxk-outer" style="display: none;"></div>
+                        <div class="xuanke-after" style="display: none;">
+                            <div class="xuanke-hide">
+                                <img src="../images/jt-down.svg" alt="">
+                            </div>
+                            <div class="bxk-ul">
+                                <div class="bxk-li">
+                                    <input class="xk-name" type="text" placeholder="您的称呼">
+                                    <span class="input-error">称呼不能为空</span>
+                                </div>
+                                <div class="bxk-li">
+                                    <input class="xk-lesson" type="text" placeholder="您想学习的课程">
+                                    <span class="input-error">请输入课程名称</span>
+                                </div>
+                                <div class="bxk-li">
+                                    <input class="xk-phone" type="tel" placeholder="您的手机号码" maxlength="11">
+                                    <span class="input-error">请输入正确的手机号</span>
+                                </div>
+                                <div class="sendcode-btn bxk-li">
+                                    <input class="xk-code" type="number" placeholder="输入验证码">
+                                    <span class="input-error">验证码错误</span>
+                                    <a href="javascript:;" class="get-code">获取验证码</a>
+                                </div>
+                            </div>
+                            <div class="bxk-button">
+                                <a href="javascript:;">免费帮我选课</a>
+                            </div>
+                            <div class="bxk-bottom">
+                                <i class="control icon-kuaizhuang23"></i><span>您的个人信息保护中，仅平台可见</span>
+                            </div>
+                        </div>
+                        <div class="xuanke-success" style="display: none;">
+                            <!-- <span id="lottie"></span> -->
+                            <span class="control icon-kuaizhuang2"></span>
+                            <h4>选课预约成功</h4>
+                            <p>选课顾问会尽快与您联系<br>请保持手机流畅</p>
+                            <div class="bxk-button">
+                                <a href="javascript:;">确定</a>
+                            </div>
+                            <div class="bxk-bottom">
+                                <i class="control icon-kuaizhuang23"></i><span>您的个人信息保护中，仅平台可见</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="teacher-item-avatar">
+                            <img src="../images/kf/kf-05-img.png" alt="" />
+                        </div>
+                        <div class="teacher-item-intro">
+                            <h4 class="teacher-item-name">王美青</h4>
+                            <p class="teacher-item-age">服务5年</p>
+                            <div class="teacher-item-data mt30">
+                                <i class="control icon-yonghukuaizhuang"></i>
+                                <span class="pop">服务用户数：</span>
+                                <span class="fontArial pop serve-number">20482</span>
+                            </div>
+                            <div class="teacher-item-data">
+                                <i class="control icon-zankuaizhuang"></i>
+                                <span class="pop">好评率：</span>
+                                <span class="fontArial pop">100%</span>
+                            </div>
+                            <button class="teacher-item-btn">让TA帮我选课</button>
+                        </div>
+                        <div class="teacher-bxk-outer" style="display: none;"></div>
+                        <div class="xuanke-after" style="display: none;">
+                            <div class="xuanke-hide">
+                                <img src="../images/jt-down.svg" alt="">
+                            </div>
+                            <div class="bxk-ul">
+                                <div class="bxk-li">
+                                    <input class="xk-name" type="text" placeholder="您的称呼">
+                                    <span class="input-error">称呼不能为空</span>
+                                </div>
+                                <div class="bxk-li">
+                                    <input class="xk-lesson" type="text" placeholder="您想学习的课程">
+                                    <span class="input-error">请输入课程名称</span>
+                                </div>
+                                <div class="bxk-li">
+                                    <input class="xk-phone" type="tel" placeholder="您的手机号码" maxlength="11">
+                                    <span class="input-error">请输入正确的手机号</span>
+                                </div>
+                                <div class="sendcode-btn bxk-li">
+                                    <input class="xk-code" type="number" placeholder="输入验证码">
+                                    <span class="input-error">验证码错误</span>
+                                    <a href="javascript:;" class="get-code">获取验证码</a>
+                                </div>
+                            </div>
+                            <div class="bxk-button">
+                                <a href="javascript:;">免费帮我选课</a>
+                            </div>
+                            <div class="bxk-bottom">
+                                <i class="control icon-kuaizhuang23"></i><span>您的个人信息保护中，仅平台可见</span>
+                            </div>
+                        </div>
+                        <div class="xuanke-success" style="display: none;">
+                            <!-- <span id="lottie"></span> -->
+                            <span class="control icon-kuaizhuang2"></span>
+                            <h4>选课预约成功</h4>
+                            <p>选课顾问会尽快与您联系<br>请保持手机流畅</p>
+                            <div class="bxk-button">
+                                <a href="javascript:;">确定</a>
+                            </div>
+                            <div class="bxk-bottom">
+                                <i class="control icon-kuaizhuang23"></i><span>您的个人信息保护中，仅平台可见</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="teacher-item-avatar">
+                            <img src="../images/kf/kf-06-img.png" alt="" />
+                        </div>
+                        <div class="teacher-item-intro">
+                            <h4 class="teacher-item-name">马真真</h4>
+                            <p class="teacher-item-age">服务5年</p>
+                            <div class="teacher-item-data mt30">
+                                <i class="control icon-yonghukuaizhuang"></i>
+                                <span class="pop">服务用户数：</span>
+                                <span class="fontArial pop serve-number">24680</span>
+                            </div>
+                            <div class="teacher-item-data">
+                                <i class="control icon-zankuaizhuang"></i>
+                                <span class="pop">好评率：</span>
+                                <span class="fontArial pop">100%</span>
+                            </div>
+                            <button class="teacher-item-btn">让TA帮我选课</button>
+                        </div>
+                        <div class="teacher-bxk-outer" style="display: none;"></div>
+                        <div class="xuanke-after" style="display: none;">
+                            <div class="xuanke-hide">
+                                <img src="../images/jt-down.svg" alt="">
+                            </div>
+                            <div class="bxk-ul">
+                                <div class="bxk-li">
+                                    <input class="xk-name" type="text" placeholder="您的称呼">
+                                    <span class="input-error">称呼不能为空</span>
+                                </div>
+                                <div class="bxk-li">
+                                    <input class="xk-lesson" type="text" placeholder="您想学习的课程">
+                                    <span class="input-error">请输入课程名称</span>
+                                </div>
+                                <div class="bxk-li">
+                                    <input class="xk-phone" type="tel" placeholder="您的手机号码" maxlength="11">
+                                    <span class="input-error">请输入正确的手机号</span>
+                                </div>
+                                <div class="sendcode-btn bxk-li">
+                                    <input class="xk-code" type="number" placeholder="输入验证码">
+                                    <span class="input-error">验证码错误</span>
+                                    <a href="javascript:;" class="get-code">获取验证码</a>
+                                </div>
+                            </div>
+                            <div class="bxk-button">
+                                <a href="javascript:;">免费帮我选课</a>
+                            </div>
+                            <div class="bxk-bottom">
+                                <i class="control icon-kuaizhuang23"></i><span>您的个人信息保护中，仅平台可见</span>
+                            </div>
+                        </div>
+                        <div class="xuanke-success" style="display: none;">
+                            <!-- <span id="lottie"></span> -->
+                            <span class="control icon-kuaizhuang2"></span>
+                            <h4>选课预约成功</h4>
+                            <p>选课顾问会尽快与您联系<br>请保持手机流畅</p>
+                            <div class="bxk-button">
+                                <a href="javascript:;">确定</a>
+                            </div>
+                            <div class="bxk-bottom">
+                                <i class="control icon-kuaizhuang23"></i><span>您的个人信息保护中，仅平台可见</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="teacher-item-avatar">
+                            <img src="../images/kf/kf-07-img.png" alt="" />
+                        </div>
+                        <div class="teacher-item-intro">
+                            <h4 class="teacher-item-name">邢文平</h4>
+                            <p class="teacher-item-age">服务6年</p>
+                            <div class="teacher-item-data mt30">
+                                <i class="control icon-yonghukuaizhuang"></i>
+                                <span class="pop">服务用户数：</span>
+                                <span class="fontArial pop serve-number">27609</span>
+                            </div>
+                            <div class="teacher-item-data">
+                                <i class="control icon-zankuaizhuang"></i>
+                                <span class="pop">好评率：</span>
+                                <span class="fontArial pop">100%</span>
+                            </div>
+                            <button class="teacher-item-btn">让TA帮我选课</button>
+                        </div>
+                        <div class="teacher-bxk-outer" style="display: none;"></div>
+                        <div class="xuanke-after" style="display: none;">
+                            <div class="xuanke-hide">
+                                <img src="../images/jt-down.svg" alt="">
+                            </div>
+                            <div class="bxk-ul">
+                                <div class="bxk-li">
+                                    <input class="xk-name" type="text" placeholder="您的称呼">
+                                    <span class="input-error">称呼不能为空</span>
+                                </div>
+                                <div class="bxk-li">
+                                    <input class="xk-lesson" type="text" placeholder="您想学习的课程">
+                                    <span class="input-error">请输入课程名称</span>
+                                </div>
+                                <div class="bxk-li">
+                                    <input class="xk-phone" type="tel" placeholder="您的手机号码" maxlength="11">
+                                    <span class="input-error">请输入正确的手机号</span>
+                                </div>
+                                <div class="sendcode-btn bxk-li">
+                                    <input class="xk-code" type="number" placeholder="输入验证码">
+                                    <span class="input-error">验证码错误</span>
+                                    <a href="javascript:;" class="get-code">获取验证码</a>
+                                </div>
+                            </div>
+                            <div class="bxk-button">
+                                <a href="javascript:;">免费帮我选课</a>
+                            </div>
+                            <div class="bxk-bottom">
+                                <i class="control icon-kuaizhuang23"></i><span>您的个人信息保护中，仅平台可见</span>
+                            </div>
+                        </div>
+                        <div class="xuanke-success" style="display: none;">
+                            <!-- <span id="lottie"></span> -->
+                            <span class="control icon-kuaizhuang2"></span>
+                            <h4>选课预约成功</h4>
+                            <p>选课顾问会尽快与您联系<br>请保持手机流畅</p>
+                            <div class="bxk-button">
+                                <a href="javascript:;">确定</a>
+                            </div>
+                            <div class="bxk-bottom">
+                                <i class="control icon-kuaizhuang23"></i><span>您的个人信息保护中，仅平台可见</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="teacher-item-avatar">
+                            <img src="../images/kf/kf-08-img.png" alt="" />
+                        </div>
+                        <div class="teacher-item-intro">
+                            <h4 class="teacher-item-name">姬忠春</h4>
+                            <p class="teacher-item-age">服务5年</p>
+                            <div class="teacher-item-data mt30">
+                                <i class="control icon-yonghukuaizhuang"></i>
+                                <span class="pop">服务用户数：</span>
+                                <span class="fontArial pop serve-number">21901</span>
+                            </div>
+                            <div class="teacher-item-data">
+                                <i class="control icon-zankuaizhuang"></i>
+                                <span class="pop">好评率：</span>
+                                <span class="fontArial pop">100%</span>
+                            </div>
+                            <button class="teacher-item-btn">让TA帮我选课</button>
+                        </div>
+                        <div class="teacher-bxk-outer" style="display: none;"></div>
+                        <div class="xuanke-after" style="display: none;">
+                            <div class="xuanke-hide">
+                                <img src="../images/jt-down.svg" alt="">
+                            </div>
+                            <div class="bxk-ul">
+                                <div class="bxk-li">
+                                    <input class="xk-name" type="text" placeholder="您的称呼">
+                                    <span class="input-error">称呼不能为空</span>
+                                </div>
+                                <div class="bxk-li">
+                                    <input class="xk-lesson" type="text" placeholder="您想学习的课程">
+                                    <span class="input-error">请输入课程名称</span>
+                                </div>
+                                <div class="bxk-li">
+                                    <input class="xk-phone" type="tel" placeholder="您的手机号码" maxlength="11">
+                                    <span class="input-error">请输入正确的手机号</span>
+                                </div>
+                                <div class="sendcode-btn bxk-li">
+                                    <input class="xk-code" type="number" placeholder="输入验证码">
+                                    <span class="input-error">验证码错误</span>
+                                    <a href="javascript:;" class="get-code">获取验证码</a>
+                                </div>
+                            </div>
+                            <div class="bxk-button">
+                                <a href="javascript:;">免费帮我选课</a>
+                            </div>
+                            <div class="bxk-bottom">
+                                <i class="control icon-kuaizhuang23"></i><span>您的个人信息保护中，仅平台可见</span>
+                            </div>
+                        </div>
+                        <div class="xuanke-success" style="display: none;">
+                            <!-- <span id="lottie"></span> -->
+                            <span class="control icon-kuaizhuang2"></span>
+                            <h4>选课预约成功</h4>
+                            <p>选课顾问会尽快与您联系<br>请保持手机流畅</p>
+                            <div class="bxk-button">
+                                <a href="javascript:;">确定</a>
+                            </div>
+                            <div class="bxk-bottom">
+                                <i class="control icon-kuaizhuang23"></i><span>您的个人信息保护中，仅平台可见</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <meta charset="utf-8" />
+        </div>
+    </div>
+    <!--底部-->
+    <div class="short-footer">
+        <div class="footer-cont">
+            <ul>
+                <li><a href="about.html" rel="nofollow" target="_blank">关于教育宝</a></li>
+                <li><a href="contact.html" rel="nofollow" target="_blank">联系方式</a></li>
+                <li><a href="enter.html" rel="nofollow" target="_blank">品牌合作</a></li>
+                <li><a href="#" target="_blank">邦邦下载</a></li>
+                <li><a href="#" rel="nofollow" target="_blank">招生后台</a></li>
+                <li><a href="#" rel="nofollow" target="_blank">点评奖金</a></li>
+                <li><a href="rights.html" rel="nofollow" target="_blank">权利声明</a></li>
+                <li><a href="laws.html" rel="nofollow" target="_blank">法律声明</a></li>
+                <li><a href="yinsi.html" rel="nofollow" target="_blank">隐私条款</a></li>
+            </ul>
+            <div class="fcopyright">
+                增值电信业务经营许可证： <span class="pr5">鲁 B2-20100091</span> 法律顾问：山东舜达律师事务所
+                <br>© 2017
+                <a href="//www.jiaoyubao.cn" target="_blank">Jiaoyubao.cn</a> 版权所有
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="http://static.jiaoyubao.cn/js/jquery/jquery.min.1.11.1.js" charset="utf-8">
+    </script>
+    <script src="https://static.jiaoyubao.cn/js/web/jyb-ui-v2.js" charset="utf-8"></script>
+    <script src="https://static.jiaoyubao.cn/js/jquery/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="../js/jyb-pc-v3.0.js" charset="utf-8"></script>
+    <script src="../js/serve-num.js" charset="utf-8"></script>
+    <script charset="utf-8">
+        //专业顾问轮播
+        $(".chome-teacher-cont").slide({
+            mainCell: ".bd ul",
+            autoPage: true,
+            effect: "left",
+            scroll: 4,
+            vis: 4,
+            easing: "swing",
+            pnLoop: false
+        });
+        $(window).scroll(function () {
+            var window_top = $(window).scrollTop();
+            if (window_top > $(".bxk-comment-outer")[0].offsetTop - window.innerHeight) {
+                $(".bxk-comment-outer .comment-animate").addClass("bxk-fadein");
+                $(".bxk-students-box").show();
+            }
+        })
+    </script>
+</body>
+
+</html>

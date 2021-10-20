@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="applicable-device" content="mobile">
+    <title> index </title>
+    <!-- <script src="//static.jiaoyubao.cn/js/uaredirect.js" type="text/javascript"></script> -->
+    <!-- <script type="text/javascript">        pcredirect("//jn.jiaoyubao.cn/");</script> -->
+    <!-- 解决移动端click事件300ms延迟问题 -->
+    <script type='application/javascript' src="https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js" charset="utf-8"></script>
+    <!-- phone reset -->
+    <link rel="stylesheet" type="text/css" href="https://static.jiaoyubao.cn/css/web/m-reset.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="https://static.jiaoyubao.cn/weui/weui.v2.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="https://m.jiaoyubao.cn/css/swiper.min.css" charset="utf-8">
+    <!-- TODO 更换文件地址 -->
+    <link rel="stylesheet" type="text/css" href="https://static.jiaoyubao.cn/css/web/m-jyb-ui.css">
+    <!-- 项目样式表 -->
+    <link rel="stylesheet" type="text/css" href="./css/jyb-H5-v3.0.css">
+</head>
+
+<body>
+    <div class="m-common-container m-index-container flex-box-column">
+        <main class="m-common-main flex-1">
+            <!-- header -->
+            <ul class="m-jyb-header m-jyb-header-fixed m-header-logo_input flex-box">
+                <li class="m-header-logo flex-box mr15">
+                    <a href="javascript:;"><img src="https://static.jiaoyubao.cn/images/common/mark-jyb-logo.svg" alt=""></a>
+                </li>
+                <li class="m-header-input flex-box flex-1 ellipsis-1 mr15">
+                    <span class="m-common-icon icon_search_linear"></span>
+                    <a class="m-header-input-txt ellipsis-1" href="#">机构名称或课程名称</a>
+                </li>
+                <li class="m-header-history flex-box mr10">
+                    <a href="#" class="m-common-icon menu_history_linear"></a>
+                </li>
+                <li class="m-header-location flex-box"><a href="#" class="flex-box"><span class="m-header-location-name ellipsis-1">济南</span><i class="m-common-icon icon_bottom_no_bg"></i></a></li>
+            </ul>
+            <!-- banner -->
+            <div class="m-index-banner-outer">
+                <div class="m-index-banner-content">
+                    <div class="m-index-banner-swiper">
+                        <div class="swiper-wrapper">
+                            <a href="javascript:;" class="swiper-slide m-index-banner-inner m-index-banner--blue">
+                                <img src="img/index-banner@3x.png" alt="">
+                            </a>
+                            <a href="javascript:;" class="swiper-slide m-index-banner-inner m-index-banner--red">
+                                <img src="img/index-banner@3x.png" alt="">
+                            </a>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination flex-box"></div>
+                    </div>
+                    <!-- 最新统计 -->
+                    <div class="m-index-banner-data flex-box-around">
+                        <div class="flex-box"><span class="m-common-icon icon_chart_linear"></span><span class="index-banner-data-name">最新统计</span></div>
+                        <div class="flex-box"><span class="fontArial">53,777</span><span>家机构</span></div>
+                        <div class="flex-box"><span class="fontArial">532,305</span><span>门课程</span></div>
+                        <div class="flex-box"><span class="fontArial">2,357,969</span><span>位学员</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-index-main-content">
+                <!-- menu-nav -->
+                <div class="m-index-menu-nav">
+                    <div class="m-menu-nav-swiper swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide m-menu-nav-inner clearfloat">
+                                <a href="javascript:;">
+                                    <img src="https://static.jiaoyubao.cn/images/uniapp/assets/jg-hp-xqxx-icon.png" alt="">
+                                    <span>学前小学</span>
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://static.jiaoyubao.cn/images/uniapp/assets/jg-hp-czgz-icon.png" alt="">
+                                    <span>初中高中</span>
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://static.jiaoyubao.cn/images/uniapp/assets/jg-hp-yylx-icon.png" alt="">
+                                    <span>语言/留学</span>
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://static.jiaoyubao.cn/images/uniapp/assets/jg-hp-zgkz-icon.png" alt="">
+                                    <span>资格考证</span>
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://static.jiaoyubao.cn/images/uniapp/assets/jg-hp-jyjn-icon.png" alt="">
+                                    <span>就业技能</span>
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://static.jiaoyubao.cn/images/uniapp/assets/jg-hp-xqah-icon.png" alt="">
+                                    <span>兴趣爱好</span>
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://static.jiaoyubao.cn/images/uniapp/assets/jg-hp-seyy-icon.png" alt="">
+                                    <span>少儿英语</span>
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://static.jiaoyubao.cn/images/uniapp/assets/jg-hp-ys-icon.png" alt="">
+                                    <span>雅思</span>
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://static.jiaoyubao.cn/images/uniapp/assets/jg-hp-tf-icon.png" alt="">
+                                    <span>托福</span>
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://static.jiaoyubao.cn/images/uniapp/assets/jg-hp-cjkj-icon.png" alt="">
+                                    <span>财经/会计</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide m-menu-nav-inner clearfloat">
+                                <a href="javascript:;">
+                                    <img src="https://static.jiaoyubao.cn/images/uniapp/assets/jg-hp-wd-icon.png" alt="">
+                                    <span>舞蹈</span>
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://static.jiaoyubao.cn/images/uniapp/assets/jg-hp-yyyq-icon.png" alt="">
+                                    <span>音乐/乐器</span>
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://static.jiaoyubao.cn/images/uniapp/assets/jg-hp-xyz-icon.png" alt="">
+                                    <span>小语种</span>
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://static.jiaoyubao.cn/images/uniapp/assets/jg-hp-jzgc-icon.png" alt="">
+                                    <span>建筑工程</span>
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://static.jiaoyubao.cn/images/uniapp/assets/jg-hp-mzsy-icon.png" alt="">
+                                    <span>美妆/摄影</span>
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://static.jiaoyubao.cn/images/uniapp/assets/jg-hp-sjpx-icon.png" alt="">
+                                    <span>设计</span>
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://static.jiaoyubao.cn/images/uniapp/assets/jg-hp-yjpx-icon.png" alt="">
+                                    <span>瑜伽</span>
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://static.jiaoyubao.cn/images/uniapp/assets/jg-hp-ykzy-icon.png" alt="">
+                                    <span>艺考专业课</span>
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://static.jiaoyubao.cn/images/uniapp/assets/jg-hp-jszg-icon.png" alt="">
+                                    <span>教师资格证</span>
+                                </a>
+                                <a href="javascript:;">
+                                    <img src="https://static.jiaoyubao.cn/images/uniapp/assets/jg-hp-qbkc-icon.png" alt="">
+                                    <span>全部课程</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination flex-box"></div>
+                    </div>
+                </div>
+                <!-- 在线课入口 -->
+                <div>
+                    <a href="/zxke/"><img src="https://static.jiaoyubao.cn/h5/img/home-banner-img@3x.png" style="width: 100%;margin-bottom: 10px;"></a>
+                </div>
+                <!-- choose-class -->
+                <div class="m-index-choose-class">
+                    <div class="m-choose-class-title flex-box">
+                        <i class="m-choose-class-l"></i>
+                        <span>平台资深顾问一对一免费选课</span>
+                        <i class="m-choose-class-r"></i>
+                    </div>
+                    <p class="m-choose-class-tips">15分钟臻选3个优质机构和课程</p>
+                    <div class="m-choose-class-intro flex-box-around">
+                        <span class="flex-box"><i class="m-common-icon menu_teacher"></i>100+顾问</span>
+                        <span class="flex-box"><i class="m-common-icon menu_index"></i>5万+机构</span>
+                        <span class="flex-box"><i class="m-common-icon menu_class"></i>50万+课程</span>
+                    </div>
+                    <a class="m-choose-class-link" href="#">免费帮我选课</a>
+                    <p class="m-choose-class-num flex-box"><span>5</span><span>3</span><span>2</span><span>7</span><span>7</span>&nbsp;人今日找到满意的课程</p>
+                </div>
+                <!-- 点评/投诉帮 -->
+                <div class="m-index-features flex-box">
+                    <a href="#" class="m-features-dp flex-1">
+                        <span class="m-features-title">点评奖金</span>
+                        <span class="m-features-tips">评价获得随机红包</span>
+                        <img src="./img/index-tu-06.png" alt="">
+                        <i>已有204345人评价</i>
+                    </a>
+                    <a href="#" class="m-features-ts flex-1">
+                        <span class="m-features-title">教育投诉帮</span>
+                        <span class="m-features-tips">教育行业投诉中心</span>
+                        <img src="./img/index-tu-07.png" alt="">
+                    </a>
+                </div>
+                <!-- 类别模块 -->
+                <!-- 艺术兴趣 -->
+                <div class="m-index-common-sort">
+                    <a class="index-common-sort-header flex-box">
+                        <span class="index-common-sort-title index-sort--red flex-1">艺术兴趣</span>
+                        <span class="index-common-sort-more flex-box">更多<i class="m-common-icon icon_right_block"></i></span>
+                    </a>
+                    <div class="index-common-sort-list clearfloat">
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/ysxq-yq-icon.png" alt="">
+                            <span>乐器</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/ysxq-wd-icon.png" alt="">
+                            <span>舞蹈</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/ysxq-by-icon.png" alt="">
+                            <span>表演</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/ysxq-wq-icon.png" alt="">
+                            <span>围棋</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/ysxq-sebc-icon.png" alt="">
+                            <span>少儿编程</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/ysxq-jqr-icon.png" alt="">
+                            <span>机器人</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/ysxq-sems-icon.png" alt="">
+                            <span>少儿美术</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/ysxq-sf-icon.png" alt="">
+                            <span>书法</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/ysxq-lq-icon.png" alt="">
+                            <span>篮球</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/ysxq-tqd-icon.png" alt="">
+                            <span>跆拳道</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/ysxq-ws-icon.png" alt="">
+                            <span>武术</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/ysxq-yj-icon.png" alt="">
+                            <span>瑜伽</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- 学前小学 -->
+                <div class="m-index-common-sort">
+                    <a class="index-common-sort-header flex-box">
+                        <span class="index-common-sort-title index-sort--green flex-1">学前小学</span>
+                        <span class="index-common-sort-more flex-box">更多<i class="m-common-icon icon_right_block"></i></span>
+                    </a>
+                    <div class="index-common-sort-list clearfloat">
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/xqxx-zj-icon.png" alt="">
+                            <span>早教</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/xqxx-ynkf-icon.png" alt="">
+                            <span>右脑开发</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/xqxx-gtxl-icon.png" alt="">
+                            <span>感统训练</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/xqxx-yeyy-icon.png" alt="">
+                            <span>婴儿游泳</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/xqxx-seyy-icon.png" alt="">
+                            <span>少儿英语</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/xqxx-xqjy-icon.png" alt="">
+                            <span>学前教育</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/xqxx-xxfd-icon.png" alt="">
+                            <span>小学辅导</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/xqxx-xly-icon.png" alt="">
+                            <span>冬/夏令营</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- 初中高中 -->
+                <div class="m-index-common-sort">
+                    <a class="index-common-sort-header flex-box">
+                        <span class="index-common-sort-title index-sort--blue flex-1">初中高中</span>
+                        <span class="index-common-sort-more flex-box">更多<i class="m-common-icon icon_right_block"></i></span>
+                    </a>
+                    <div class="index-common-sort-list clearfloat">
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/czgz-czfd-icon.png" alt="">
+                            <span>初中辅导</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/czgz-zkfd-icon.png" alt="">
+                            <span>中考辅导</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/czgz-gzfd-icon.png" alt="">
+                            <span>高中辅导</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/czgz-gkfd-icon.png" alt="">
+                            <span>高考辅导</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/czgz-ykms-icon.png" alt="">
+                            <span>艺考美术</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/czgz-byzc-icon.png" alt="">
+                            <span>播音主持</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/czgz-ykby-icon.png" alt="">
+                            <span>艺考表演</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/czgz-gdyk-icon.png" alt="">
+                            <span>更多艺考</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- 语言留学 -->
+                <div class="m-index-common-sort">
+                    <a class="index-common-sort-header flex-box">
+                        <span class="index-common-sort-title index-sort--purple flex-1">语言留学</span>
+                        <span class="index-common-sort-more flex-box">更多<i class="m-common-icon icon_right_block"></i></span>
+                    </a>
+                    <div class="index-common-sort-list clearfloat">
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/yylx-ys-icon.png" alt="">
+                            <span>雅思</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/yylx-tf-icon.png" alt="">
+                            <span>托福</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/yylx-gre-icon.png" alt="">
+                            <span>GRE</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/yylx-sat-icon.png" alt="">
+                            <span>SAT</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/yylx-ry-icon.png" alt="">
+                            <span>日语</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/yylx-hy-icon.png" alt="">
+                            <span>韩语</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/yylx-fy-icon.png" alt="">
+                            <span>法语</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/yylx-dy-icon.png" alt="">
+                            <span>德语</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/yylx-lx-icon.png" alt="">
+                            <span>留学</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/yylx-ym-icon.png" alt="">
+                            <span>移民</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/yylx-gjxx-icon.png" alt="">
+                            <span>国际学校</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/yylx-zpj-icon.png" alt="">
+                            <span>作品集</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- 资格考证 -->
+                <div class="m-index-common-sort">
+                    <a class="index-common-sort-header flex-box">
+                        <span class="index-common-sort-title index-sort--yellow flex-1">资格考证</span>
+                        <span class="index-common-sort-more flex-box">更多<i class="m-common-icon icon_right_block"></i></span>
+                    </a>
+                    <div class="index-common-sort-list clearfloat">
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/zgkz-kjzc-icon.png" alt="">
+                            <span>会计职称</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/zgkz-zk-icon.png" alt="">
+                            <span>注会</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/zgkz-jszg-icon.png" alt="">
+                            <span>教师资格证</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/zgkz-rlzy-icon.png" alt="">
+                            <span>人力资源师</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/zgkz-jzs-icon.png" alt="">
+                            <span>建造师</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/zgkz-zjs-icon.png" alt="">
+                            <span>造价师</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/zgkz-xfgc-icon.png" alt="">
+                            <span>消防工程师</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/zgkz-jlgc-icon.png" alt="">
+                            <span>监理工程师</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- 就业技能 -->
+                <div class="m-index-common-sort">
+                    <a class="index-common-sort-header flex-box">
+                        <span class="index-common-sort-title index-sort--red flex-1">就业技能</span>
+                        <span class="index-common-sort-more flex-box">更多<i class="m-common-icon icon_right_block"></i></span>
+                    </a>
+                    <div class="index-common-sort-list clearfloat">
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/jyjn-hzpx-icon.png" alt="">
+                            <span>化妆培训</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/jyjn-mrmf-icon.png" alt="">
+                            <span>美容美发</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/jyjn-wxmj-icon.png" alt="">
+                            <span>纹绣美甲</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/jyjn-sypx-icon.png" alt="">
+                            <span>摄影培训</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/jyjn-sjpx-icon.png" alt="">
+                            <span>设计培训</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/jyjn-itgcx-icon.png" alt="">
+                            <span>IT工程师</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/jyjn-cyxc-icon.png" alt="">
+                            <span>餐饮小吃</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/jyjn-qcwx-icon.png" alt="">
+                            <span>汽车维修</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/jyjn-ys-icon.png" alt="">
+                            <span>月嫂</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/jyjn-yys-icon.png" alt="">
+                            <span>育婴师</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/jyjn-hqsj-icon.png" alt="">
+                            <span>婚庆司机</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/jyjn-zyjn-icon.png" alt="">
+                            <span>中医技能</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- 职场其他 -->
+                <div class="m-index-common-sort">
+                    <a class="index-common-sort-header flex-box">
+                        <span class="index-common-sort-title index-sort--purple flex-1">职场其他</span>
+                        <span class="index-common-sort-more flex-box">更多<i class="m-common-icon icon_right_block"></i></span>
+                    </a>
+                    <div class="index-common-sort-list clearfloat">
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/zcqt-crgk-icon.png" alt="">
+                            <span>成人高考</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/zcqt-wljy-icon.png" alt="">
+                            <span>网络教育</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/zcqt-zxks-icon.png" alt="">
+                            <span>自学考试</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/zcqt-kypx-icon.png" alt="">
+                            <span>考研培训</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/zcqt-tzxl-icon.png" alt="">
+                            <span>拓展训练</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/zcqt-qynx-icon.png" alt="">
+                            <span>企业内训</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/zcqt-yjkc-icon.png" alt="">
+                            <span>演讲口才</span>
+                        </a>
+                        <a href="#" class="flex-box-column">
+                            <img src="https://static.jiaoyubao.cn/images/uniapp/subclass/zcqt-gdlb-icon.png" alt="">
+                            <span>更多类别</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 知了好学 -->
+                <a class="zhiliaohaoxue flex-box" href="//m.jiaoyubao.cn/zhiliaohaoxue/">
+                    <span class="flex-1 info">教育宝联手百度知了好学</span>
+                    <span>了解详情</span>
+                    <i class="m-common-icon icon_right_no_bg"></i>
+                </a>
+                <style>
+                    .zhiliaohaoxue {
+                        width: 100%;
+                        height: 40px;
+                        padding: 0 12px 0 9px;
+                        margin-top: 10px;
+                        background-image: linear-gradient(90deg, #3473FF 0%, #1CA4FF 100%);
+                        border-left: 4px solid rgba(130, 169, 255, 0.6);
+                        border-radius: 2px;
+                        border-radius: 4px;
+                        font-size: 14px;
+                        color: #fff;
+                    }
+                    
+                    .zhiliaohaoxue span {
+                        display: inline-block;
+                    }
+                    
+                    .zhiliaohaoxue .info {
+                        font-weight: 600;
+                    }
+                    
+                    .zhiliaohaoxue .icon_right_no_bg {
+                        width: 16px;
+                        height: 16px;
+                        margin-left: 4px;
+                        background-color: #fff;
+                    }
+                </style>
+
+                <!-- footer -->
+                <div class="m-H5-v3-footer">
+                    <ul class="m-jyb-footer-link flex-box border-bottom-1px">
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">联系我们</a></li>
+                        <li><a href="#">品牌合作</a></li>
+                        <li><a href="#">点评奖金</a></li>
+                        <li><a href="#">意见反馈</a></li>
+                    </ul>
+                    <div class="m-jyb-copyright">
+                        <p>copyright &copy济南邦赢信息技术有限公司 版权所有</p>
+                        <p>联系电话：400-601-2788</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- choose class pop -->
+        <div class="m-common-mask" style="display: none;"><span class="m-common-icon icon_down_thin_no_bg"></span></div>
+        <div class="m-pop-choose-class" style="display: none;">
+            <div class="m-index-choose-class">
+                <div class="m-choose-class-title flex-box">
+                    <i class="m-choose-class-l"></i>
+                    <span>平台资深顾问一对一免费选课</span>
+                    <i class="m-choose-class-r"></i>
+                </div>
+                <p class="m-choose-class-tips">15分钟臻选3个优质机构和课程</p>
+            </div>
+            <!-- form -->
+            <div class="m-pop-choose-class-form">
+                <div class="m-pop-form-inner">
+                    <div class="m-jyb-form-group flex-box">
+                        <input type="text" class="m-jyb-input flex-1 m-pop-input-city" value="济南市" placeholder="请选择城市" readonly="">
+                        <i class="m-common-icon icon_right_no_bg"></i>
+                    </div>
+                    <div class="m-jyb-form-group flex-box">
+                        <input type="text" class="m-jyb-input flex-1 m-pop-input-class" value="" placeholder="请选择课程" readonly="">
+                        <i class="m-common-icon icon_right_no_bg"></i>
+                    </div>
+                    <div class="m-jyb-form-group flex-box">
+                        <input type="number" class="m-jyb-input flex-1 m-pop-input-phone" value="" placeholder="请输入您的手机号码，隐私保护">
+                    </div>
+                    <div class="m-jyb-form-group flex-box">
+                        <input type="number" class="m-jyb-input flex-1 m-pop-input-code" value="" placeholder="请输入短信验证码">
+                        <button class="m-jyb-btn-getcode">获取验证码</button>
+                    </div>
+                    <button class="m-jyb-btn m-jyb-btn-blue mt20">免费帮我选课</button>
+                </div>
+            </div>
+            <!-- 优选依托 -->
+            <div class="m-pop-choose-base mt30">
+                <div class="m-choose-base-title flex-box"><i></i><span>优选依托</span><i></i></div>
+                <div class="m-choose-base-con flex-box">
+                    <div class="m-choose-base-info">
+                        <span>行业权威平台</span>
+                        <p>深耕互联网+教育9年，深受教育用户信赖的第三方平台</p>
+                    </div>
+                    <div class="flex-1 flex-box"><img class="m-choose-base-pic1" src="img/index-tu-01.png" alt=""></div>
+                </div>
+                <div class="m-choose-base-con flex-box">
+                    <div class="flex-1 flex-box"><img class="m-choose-base-pic2" src="img/index-tu-02.png" alt=""></div>
+                    <div class="m-choose-base-info">
+                        <span>300万+真实成交价数据</span>
+                        <p>积累数百万真实用户的评级、评价和成交价，公开透明的数据更精准</p>
+                    </div>
+                </div>
+                <div class="m-choose-base-con flex-box">
+                    <div class="m-choose-base-info">
+                        <span>5万品牌合作机构</span>
+                        <p>覆盖全国上百个城市50000多家品牌机构，老师好，学校多，课程全</p>
+                    </div>
+                    <div class="flex-1 flex-box"><img class="m-choose-base-pic3" src="img/index-tu-03.png" alt=""></div>
+                </div>
+                <div class="m-choose-base-con flex-box">
+                    <div class="flex-1 flex-box"><img class="m-choose-base-pic4" src="img/index-tu-04.png" alt=""></div>
+                    <div class="m-choose-base-info">
+                        <span>1对1平台顾问</span>
+                        <p>百余名资深的教育顾问，站在第三方的角度，快速为您定制一对一的个性化解决方案 </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 推荐课程 -->
+        <div class="m-pop-recommend-bg">
+            <div class="m-pop-recommend-class">
+                <div class="m-recommend-class-bg">
+                    <span class="m-common-icon icon_cross_linear"></span>
+                    <img src="img/index-tu-05@3x.png" alt="">
+                </div>
+                <div class="m-recommend-class-con">
+                    <div class="m-recommend-class-header">
+                        <span class="m-recommend-header-title">没有找到满意的课程？</span>
+                        <span class="m-recommend-header-tips">让教育宝课程顾问为您甄选吧</span>
+                    </div>
+                    <span class="m-recommend-class-tips">猜您对以下课程感兴趣</span>
+                    <div class="m-recommend-class-list flex-box">
+                        <a class="active" href="javascript:;">瑜伽</a>
+                        <a href="javascript:;">舞蹈舞蹈舞蹈舞蹈舞蹈舞蹈舞蹈舞蹈舞蹈舞蹈舞蹈</a>
+                        <a href="javascript:;">民族舞</a>
+                    </div>
+                    <div class="m-recommend-inputbox" style="display: none">
+                        <div class="inputbox-phone inputbox">
+                            <span>手机号</span>
+                            <input type="text" placeholder="隐私保护中，仅平台可见">
+                        </div>
+                        <div class="inputbox-code inputbox">
+                            <span>验证码</span>
+                            <input type="text" placeholder="请输入短信验证码">
+                            <button class="m-recommend-getcode">获取验证码</button>
+                        </div>
+                    </div>
+                    <div class="apply-error jyb-tips" style="display: none">
+                        <span class="error-text down-to-up"></span>
+                    </div>
+                    <button class="m-recommend-class-btn m-jyb-btn m-jyb-btn-blue">免费帮我选课</button>
+                    <div class="m-choose-class-intro flex-box-around">
+                        <span class="flex-box"><i class="m-common-icon menu_teacher"></i>1对1服务</span>
+                        <span class="flex-box"><i class="m-common-icon menu_index"></i>15分钟选3家</span>
+                        <span class="flex-box"><i class="m-common-icon menu_class"></i>50万+课程</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="https://static.jiaoyubao.cn/js/jquery/jquery.min.1.11.1.js" charset="utf-8"></script>
+    <script type="text/javascript" src="https://static.jiaoyubao.cn/weui/weui.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="https://m.jiaoyubao.cn/js/swiper.min.js" charset="utf-8"></script>
+    <!-- TODO m-jyb-ui.js 更换引用地址 -->
+    <script type="text/javascript" src="https://static.jiaoyubao.cn/js/web/m-jyb-ui.js"></script>
+    <script type="text/javascript" src="js/jyb-H5-v3.0.js"></script>
+
+    <script type="text/javascript">
+        // banner
+        var bannerSwiper = new Swiper('.m-index-banner-swiper', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            autoplay: 3000, // 自动切换的时间间隔
+            speed: 1000, // 滑动速度
+            paginationType: 'custom',
+            autoplayDisableOnInteraction: false, // false，用户操作swiper之后会重新启动autoplay
+            loop: true,
+        });
+        // menu-nav
+        var menuNavSwiper = new Swiper('.m-menu-nav-swiper', {
+            pagination: '.swiper-pagination',
+            // paginationType : 'custom',
+            paginationClickable: true,
+        });
+
+        // recommend-pop
+        var boxwidth = $(".m-recommend-class-list").width();
+        var itemwidth = 0;
+        $(".m-recommend-class-list a").each(function() {
+            itemwidth += parseInt($(this).width()) + 20;
+        });
+        if (itemwidth > boxwidth) {
+            $(".m-recommend-class-list").addClass("m-recommend-scroll");
+        }
+    </script>
+</body>
+
+</html>

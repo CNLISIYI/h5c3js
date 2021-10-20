@@ -1,0 +1,146 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+<meta name="viewport" content="width=device-width, target-densityDpi=device-dpi, user-scalable=yes">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="email=no">
+<title>手机APP应用-教育宝</title>
+<meta name="keywords" content="手机APP应用下载教育宝">
+<meta name="description" content="手机APP应用下载教育宝">
+<link type="text/css" rel="stylesheet" href="./css/mloader.css" charset="utf-8" />
+</head>
+
+<body>
+<div class="mloader-contrainer">
+ <div class="mloader-banner mloader-contrainer">
+    <div class="mloader-blank"></div>
+    <div class="mloader-bimg"></div>
+ </div>
+ <div class="clearflow mloader-btn">
+   <a onclick="downloadAPP('http://a.app.qq.com/o/simple.jsp?pkgname=com.kingkr.koirkrt')" target="_blank" style="cursor:pointer"><span class="span-icon mloader-icon"></span>Android下载</a>
+   <a onclick="downloadAPP('https://apps.apple.com/cn/app/id1504801311')" target="_blank" style="cursor:pointer"><span class="span-icon1 mloader-icon"></span>iPhone 下载</a>
+ </div>
+ <div class="mloader-border"></div>
+ <h3 class="mloader-t">小蜜选课·方便</h3>
+ <p class="mloader-p">平台顾问为你选择精品课程，选课更轻松哦</p>
+ <div class="mloader-xm">
+   <div class="mloader-xmtel mloader-actionbg"></div>
+       <i class="xm-i-1 mloader-i"></i>
+       <i class="xm-i-2 mloader-i"></i>
+       <i class="xm-i-3 mloader-i"></i>
+       <i class="xm-i-4 mloader-i"></i>
+       <em  class="xm-em-1 mloader-em">优质机构</em>
+       <em  class="xm-em-2 mloader-em">专业顾问</em>
+       <em  class="xm-em-3 mloader-em">精品课程</em>
+       <em  class="xm-em-4 mloader-em">匹配迅速</em>
+       <div class="mloader-xmpp mloader-i">匹配次数200万+<span class="circle-fff"></span></div>
+ </div>
+   <div class="mloader-border"></div>
+  <h3 class="mloader-t">平台学员·真实评价</h3>
+  <p class="mloader-p">学长评写真实学习体验，方便你的选择！</p>
+  <div class="mloader-xm">
+  		<div class="mloader-actionbg mloader-pj"></div>
+        <i class="mloader-pj-i mloader-pj-i1">时效性快</i>
+        <i class="mloader-pj-i mloader-pj-i2">海量评价</i>
+        <i class="mloader-pj-i mloader-pj-i3">客观性强</i>
+        <i class="mloader-pj-i mloader-pj-i4">真实有效</i>
+  </div>
+  <div class="mloader-border"></div>
+  <h3 class="mloader-t">课程免减券·涌来</h3>
+  <p class="mloader-p">免减券大放送，聚优惠，一学就“惠”</p>
+   <div class="mloader-xm">
+  		<div class="mloader-actionbg mloader-mj"></div>
+        <i class="mloader-mj-i mloader-i"></i>
+        <div class="mloader-mj-i2 mloader-i"><span>免减券大放送</span></div>
+  </div>
+  <div class="mloader-border"></div>
+  <h3 class="mloader-t">我的身边·机构</h3>
+  <p class="mloader-p">好学校与你相距咫尺之间，让我来帮你发现</p>
+   <div class="mloader-xm">
+  		<div class="mloader-actionbg mloader-shb"></div>
+        <i class="mloader-shb-i1 mloader-i"></i>
+        <i class="mloader-shb-i2 mloader-i"></i>
+        <i class="mloader-shb-i3 mloader-i"></i>
+        <i class="mloader-shb-i4 mloader-i"></i>
+        <i class="mloader-shb-i5 mloader-i"></i>
+        <i class="mloader-shb-i6 mloader-i"></i>
+        <i class="mloader-shb-i7 mloader-i"></i>
+  </div>
+  <div class="mloader-border"></div>
+  <div class="clearflow mloader-btn mb80">
+   <a  onclick="downloadAPP('http://a.app.qq.com/o/simple.jsp?pkgname=com.kingkr.koirkrt')" target="_blank" style="cursor:pointer"><span class="span-icon mloader-icon"></span>Android下载</a>
+   <a  onclick="downloadAPP('https://apps.apple.com/cn/app/id1504801311')" target="_blank" style="cursor:pointer"><span class="span-icon1 mloader-icon"></span>iPhone 下载</a>
+ </div>
+</div>
+<script src="//static.jiaoyubao.cn/js/jquery/jquery.min.1.11.1.js"></script>
+<script type="text/javascript" src="//static.jiaoyubao.cn/js/p.js"></script>
+<script>
+$(function(){
+	 //手机适配
+    var body_w = 750;
+    function adjustWindowLt750() {
+        var IFO = {};
+        IFO.windw = $(window).width();
+        IFO.bodyw = body_w;
+        IFO.scale = Math.ceil(1000 * IFO.windw / IFO.bodyw) / 1000;
+        IFO.str = "width=device-width, initial-scale=" + IFO.scale + ", minimum-scale=" + IFO.scale + ",maximum-scale=" + IFO.scale + "";
+        $('meta[name=viewport]').attr('content', IFO.str)
+    }
+    function adjustWindowGt750() {
+        var viewport = document.querySelector("meta[name=viewport]");
+        var winWidths = $(window).width();
+        var densityDpi = body_w / winWidths;
+        densityDpi = densityDpi > 1 ? 300 * body_w * densityDpi / body_w: densityDpi;
+        if (isWeixin()) {
+            viewport.setAttribute('content', 'width=' + body_w + ', target-densityDpi=' + densityDpi + ', maximum-scale=' + 1 + ', user-scalable=no')
+        } else {
+            viewport.setAttribute('content', 'width=' + body_w + ', user-scalable=no')
+        }
+    }
+    function isWeixin() {
+        var ua = navigator.userAgent.toLowerCase();
+        if (ua.match(/MicroMessenger/i) == "micromessenger") {
+            return true
+        } else {
+            return false
+        }
+    }
+    function isIphone(){
+        var ua = navigator.userAgent.toLowerCase();
+        if (ua.match(/iphone/i) == "iphone") {
+            return true
+        } else {
+            return false
+        }
+    }
+    function adjustScreen() {
+        if ($(window).width() < 750) {
+            adjustWindowLt750()
+        } else if ($(window).width() > 749) {
+            adjustWindowGt750()
+        }
+    }
+
+    
+    
+    adjustScreen();
+    $(window).on("orientationchange",function(){
+        adjustScreen();
+    });	
+
+})
+
+function downloadAPP(url){
+        if (typeof TJ_Click == "function") {
+            TJ_Click("m_download_point");
+        }
+        window.location.href = url;
+    }
+</script>
+
+</body>
+</html>

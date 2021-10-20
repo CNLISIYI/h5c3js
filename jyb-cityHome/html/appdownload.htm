@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <title>教育宝APP官网下载_教育宝APP_安卓版下载_iOS版下载</title>
+    <meta name="keywords" content="手机APP应用下载教育宝">
+    <meta name="description" content="手机APP应用下载教育宝">
+    <script src="//static.jiaoyubao.cn/js/uaredirect.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        uaredirect("//www.jiaoyubao.cn/m/m/");
+    </script>
+
+    <script type="text/javascript" src="//static.jiaoyubao.cn/js/jquery/jquery.min.1.11.1.js" charset="utf-8"></script>
+    <script type="text/javascript" src="//static.jiaoyubao.cn/frame/bootstrap/js/code-v1.js" charset="utf-8"></script>
+    <script type="text/javascript" src="//static.jiaoyubao.cn/js/jquery/jquery.cookie.js"></script>
+</head>
+
+<body>
+    <vt:function method="TopTemplate" type="NationWebsite.Common.TemplateHelper" args="" args="1" output="true" />
+    <vt:function method="TopnavTemplate" type="NationWebsite.Common.TemplateHelper" args="" args="" output="true" />
+
+    <link rel="stylesheet" href="/css/app-download/download.css">
+    <div class="download-container">
+        <div class="download-content clearfloat">
+            <div class="download-info fl">
+                <img class="download-title" src="/images/app-download/dl-title-img@2x.png" alt="">
+                <img class="download-line" src="/images/app-download/dl-line-tag@2x.jpg" alt="">
+                <p class="download-msg">深受用户喜爱的教育培训第三方服务平台</p>
+                <div class="download-btns clearfloat">
+                    <div class="download-qrcode fr">
+                        <img src="/images/app-download/dl-qr-img@2x.png" alt="">
+                    </div>
+                    <button onclick="downloadAPP('https://apps.apple.com/cn/app/id1504801311')" class="download-iphone download-btn active fr">
+                        <i class="download-sign"></i>
+                        <span>iPhone下载</span>
+                    </button>
+                    <button onclick="downloadAPP('https://static.jiaoyubao.cn/apk/jiaoyubao.apk')" class="download-android download-btn fr">
+                        <i class="download-sign"></i>
+                        <span>Android下载</span>
+                    </button>
+                </div>
+            </div>
+            <div class="download-swiper fr" id="focus_Box">
+                <span class="prev">&nbsp;</span>
+                <span class="next">&nbsp;</span>
+                <ul>
+                    <li>
+                        <img src="/images/app-download/dl-02-img@2x.png">
+                    </li>
+                    <li>
+                        <img src="/images/app-download/dl-01-img@2x.png">
+                    </li>
+                    <li>
+                        <img src="/images/app-download/dl-03-img@2x.png">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <vt:function method="FooterTemplate" type="NationWebsite.Common.TemplateHelper" args="" args="" output="true" />
+
+    <script type="text/javascript" src="//static.jiaoyubao.cn/js/p.js" charset="utf-8"></script>
+    <script src="/js/app-download/slide.js"></script>
+    <script>
+        $(".download-btn").hover(function() {
+            $(this).addClass("active").siblings(".download-btn").removeClass("active");
+        })
+
+        function downloadAPP(appurl) {
+            if (typeof TJ_Click == "function") {
+                TJ_Click("m_download_point");
+            }
+            console.log(appurl);
+
+            // window.location.href = appurl;
+            window.open(appurl, '_blank');
+        }
+    </script>
+</body>
+
+</html>

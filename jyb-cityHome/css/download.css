@@ -1,0 +1,175 @@
+html,
+body {
+    height: 100%;
+    background: #f6f6f6;
+}
+
+.offices-nav-right .input-notice {
+    position: absolute;
+    height: 20px;
+    line-height: 20px;
+    color: #a8a8a8;
+    text-indent: 0;
+}
+
+.download-container {
+    width: 100%;
+    height: calc(100% - 264px);
+    min-height: 659px;
+    background: #1a8cff url(/images/app-download/dl-bg-img.jpg) no-repeat top center;
+    /* background-size: cover; */
+    background-size: 1920px 659px;
+    position: relative;
+    overflow: hidden;
+}
+
+.download-content {
+    width: 1160px;
+    height: 426px;
+    /* background-color: rgba(0, 0, 0, .3); */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+
+/* slide  */
+
+.download-info {}
+
+.download-info img {
+    display: block;
+}
+
+.download-title {
+    width: 372px;
+    height: 132px;
+}
+
+.download-line {
+    width: 90px;
+    height: 6px;
+    margin-top: 28px;
+}
+
+.download-msg {
+    height: 22px;
+    font-size: 22px;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    line-height: 22px;
+    margin-top: 28px;
+}
+
+.download-btns {
+    width: 354px;
+    margin-top: 80px;
+}
+
+.download-qrcode,
+.download-qrcode img {
+    width: 130px;
+    height: 130px;
+}
+
+.download-qrcode {
+    margin-left: 24px;
+}
+
+.download-btn {
+    width: 200px;
+    height: 52px;
+    line-height: 48px;
+    border: 2px solid #FFFFFF;
+    border-radius: 26px;
+    border-radius: 26px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.download-btn span {
+    width: 98px;
+    display: inline-block;
+    text-align: left;
+    font-family: Helvetica;
+}
+
+.download-android {
+    margin-top: 16px;
+}
+
+.download-sign {
+    width: 25px;
+    height: 24px;
+    display: inline-block;
+    background-size: 100% 100%;
+    position: relative;
+    top: 5px;
+}
+
+.download-iphone i {
+    background-image: url(/images/app-download/dl-ip-icon@2x.png);
+}
+
+.download-android i {
+    background-image: url(/images/app-download/dl-an2-icon@2x.png);
+}
+
+.download-btn:hover,
+.download-btn.active {
+    border: 0;
+    line-height: 52px;
+    background-image: url(/images/app-download/dl-hover-btn@2x.jpg);
+    background-size: 100% 100%;
+    color: #1A8CFF;
+}
+
+.download-iphone:hover i,
+.download-iphone.active i {
+    background-image: url(/images/app-download/dl-ip2-icon@2x.png);
+}
+
+.download-android:hover i,
+.download-android.active i {
+    background-image: url(/images/app-download/dl-an-icon@2x.png);
+}
+
+#focus_Box,
+#focus_Box ul {
+    position: relative;
+    width: 528px;
+}
+
+#focus_Box {
+    top: -20px;
+}
+
+#focus_Box .next,
+#focus_Box .prev {
+    display: block;
+    z-index: 100;
+    overflow: hidden;
+    cursor: pointer;
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    top: 131px;
+}
+
+#focus_Box li {
+    z-index: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 146px;
+    cursor: pointer;
+    left: 377px;
+    border-radius: 4px;
+}
