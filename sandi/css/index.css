@@ -1309,6 +1309,198 @@
   color: #fff;
 }
 /*
+* 加盟
+*/
+.join-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+}
+.join-title h4 {
+  text-align: center;
+  font-size: 60px;
+  font-family: MicrosoftYaHei;
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 210px;
+}
+.join-title p {
+  font-size: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.advan-list {
+  display: flex;
+  flex-flow: wrap;
+  margin: 158px auto 140px;
+}
+.advan-list .img-box {
+  width: 72px;
+  height: 72px;
+  margin: 24px auto 50px;
+}
+.advan-list .img-box img {
+  width: 100%;
+  height: 100%;
+}
+.advan-list h4 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333333;
+  line-height: 28px;
+  text-align: center;
+  margin: 0 auto;
+  letter-spacing: 1px;
+}
+.advan-list li {
+  position: relative;
+  max-width: 25%;
+  min-width: 25%;
+}
+.advan-list li + li {
+  border-left: 1px solid #E6E6E6;
+}
+.advan-list .limask {
+  display: none;
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 100%;
+  height: 314px;
+  background: #C3B6A5;
+  box-shadow: 0px 0px 10px 0px rgba(59, 59, 59, 0.14);
+  border-radius: 8px;
+  padding: 40px 30px;
+}
+.advan-list h5 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #FFFFFF;
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 30px;
+  text-align: center;
+  padding-bottom: 36px;
+  line-height: 32px;
+  letter-spacing: 1px;
+}
+.advan-list p {
+  padding: 0 4px;
+  font-size: 16px;
+  color: #FFFFFF;
+  line-height: 38px;
+  letter-spacing: 1px;
+}
+.advan-list li:last-child h4 {
+  max-width: 220px;
+}
+.advan-list li:hover .limask {
+  display: block;
+}
+.join-policy {
+  width: 100%;
+  height: 770px;
+}
+.join-policy ul {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 80px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+}
+.join-policy li {
+  max-width: 32%;
+  min-width: 32%;
+  height: 240px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+.join-policy p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 240px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #F5F5F5;
+}
+.join-policy img {
+  width: 100%;
+  height: 100%;
+}
+.join-policy li:hover p {
+  background-color: rgba(195, 182, 165, 0.9);
+}
+.join-policy .bg {
+  z-index: -1;
+}
+.join-form {
+  padding: 40px 20px 140px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px 0px rgba(59, 59, 59, 0.14);
+  border-radius: 16px;
+  margin-top: -100px;
+}
+.join-form .title-box {
+  margin-bottom: 100px;
+}
+.join-form .input-box {
+  font-size: 0;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+.join-form .input-box span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 29px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  text-align: right;
+  width: 70px;
+}
+.join-form .input-box input {
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 100px);
+  max-width: 640px;
+  height: 60px;
+  background: #FFFFFF;
+  border: 1px solid #E6E6E6;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 16px;
+  padding: 0 20px;
+  color: #333333;
+}
+.join-form a {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 420px;
+  height: 60px;
+  background: #E83428;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 60px;
+  letter-spacing: 10px;
+  padding-left: 10px;
+}
+/*
 * 响应式适配
 */
 @media only screen and (max-width: 1490px) {
@@ -1515,6 +1707,24 @@
   .rich-box {
     padding: 100px 20px;
   }
+  .advan-list li {
+    max-width: 50%;
+    min-width: 50%;
+    margin-bottom: 80px;
+  }
+  .advan-list .limask {
+    height: 260px;
+    top: -40px;
+  }
+  .join-policy li {
+    height: 200px;
+  }
+  .join-policy p {
+    line-height: 200px;
+  }
+  .join-form {
+    width: calc(100% - 40px);
+  }
 }
 @media only screen and (max-width: 800px) {
   .prohome-list li {
@@ -1547,6 +1757,10 @@
   .news-home .swiper-pagination-custom,
   .news-home .swiper-pagination-fraction {
     width: 400px;
+  }
+  .join-title h4 {
+    font-size: 40px;
+    line-height: 100px;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -1720,6 +1934,26 @@
   .news-home .swiper-pagination-fraction {
     width: 100%;
     top: 350px;
+  }
+  .advan-list {
+    margin-top: 80px;
+  }
+  .advan-list h4 {
+    font-size: 16px;
+    letter-spacing: 0px;
+  }
+  .advan-list .limask {
+    padding: 30px 20px;
+  }
+  .advan-list h5 {
+    letter-spacing: 0px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .advan-list p {
+    font-size: 14px;
+    letter-spacing: 0px;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -2127,5 +2361,72 @@
   }
   .store-home .news-list .address {
     margin: 12px 0;
+  }
+  .join-title h4 {
+    font-size: 24px;
+  }
+  .join-title p {
+    font-size: 16px;
+  }
+  .join-policy ul {
+    padding-top: 40px;
+  }
+  .join-policy li {
+    height: 120px;
+    margin-bottom: 20px;
+  }
+  .join-policy p {
+    line-height: 120px;
+  }
+  .advan-list {
+    margin-bottom: 60px;
+  }
+  .advan-list li {
+    margin-bottom: 60px;
+  }
+  .advan-list .img-box {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  .advan-list h4 {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  .advan-list h5 {
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    line-height: 20px;
+  }
+  .advan-list p {
+    font-size: 12px;
+    line-height: 26px;
+  }
+  .advan-list .limask {
+    height: 200px;
+    top: -30px;
+  }
+  .join-form {
+    margin-top: -60px;
+    padding-bottom: 60px;
+  }
+  .join-form .title-box {
+    margin-bottom: 40px;
+  }
+  .join-form .input-box {
+    margin-bottom: 30px;
+  }
+  .join-form .input-box span {
+    font-size: 14px;
+    margin-right: 14px;
+  }
+  .join-form .input-box input {
+    width: calc(100% - 94px);
+    height: 40px;
+  }
+  .join-form a {
+    height: 40px;
+    line-height: 40px;
   }
 }
