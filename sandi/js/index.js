@@ -8,4 +8,19 @@ $(document).on("click", ".deve-box .more", function () { //点击加载更多
         <p>环境标志产品认证证书；证书编号：CEC072913704817953325263。</p>
     </li>`
     $(".develop-list").append(_new)
+}).on("click", ".pagination span", function () { //分页
+    let _name = $(this).attr("name"),
+        idx = $(".pagination").find(".on").index(),
+        max = $(".pagination").find("span").length - 2;
+    if (_name == 'prev' && idx > 1) { //上一页
+        $(".pagination").find("span").eq(idx - 1).addClass("on").siblings().removeClass("on");
+    } else if (_name == 'next' && idx < max) { //下一页
+        $(".pagination").find("span").eq(idx + 1).addClass("on").siblings().removeClass("on");
+    } else if ($(this).index() > 0 && $(this).index() < max + 1) { //数字
+        $(this).addClass("on").siblings().removeClass("on");
+    }
+}).on("click", ".pro-nav a", function() { //产品页切换
+    $(this).addClass("on").siblings().removeClass("on");
+    $(".pro-title").text($(this).text())
+    $(".product-list").hide().eq($(this).index()).show()
 })
