@@ -23,4 +23,8 @@ $(document).on("click", ".deve-box .more", function () { //点击加载更多
     $(this).addClass("on").siblings().removeClass("on");
     $(".pro-title").text($(this).text())
     $(".product-list").hide().eq($(this).index()).show()
+}).on("click", ".login .off", function() { //经销商登录记住密码
+    $(this).hide().next().show()
+}).on("click", ".login .on", function() { //经销商登录不记住密码
+    $(this).hide().prev().show()
 })

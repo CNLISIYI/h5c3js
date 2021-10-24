@@ -19,8 +19,7 @@
 <body>
     <!-- 头部 -->
     <div class="top-head clearfix">
-        <div class="img-box"><img src="../img/home/logo.png"></div>
-        <span class="tell">加盟专线：400-648-9588</span>
+        <div class="img-box"><a href="../index.html"><img src="../img/home/logo.png"></a></div>        <span class="tell">加盟专线：400-648-9588</span>
         <div class="nav-list">
             <a href="../index.html">首页</a>
             <a href="about.html">关于</a>
@@ -126,7 +125,7 @@
             <span>申请人</span><input type="text">
         </div>
         <div class="input-box">
-            <span>联系电话</span><input type="text">
+            <span>联系电话</span><input type="number" oninput="if(value.length>11)value=value.slice(0,11)">
         </div>
         <div class="input-box">
             <span>联系地址</span><input type="text">
