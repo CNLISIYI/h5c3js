@@ -99,4 +99,6 @@ $(document).on("click", ".my-navs span", function () { //我的修改状态筛�
     let idx = $(this).index();
     $(this).addClass("on").siblings().removeClass("on");
     $(".myedit-list").hide().eq(idx).show()
+}).on("click", ".comment-btn", function() { //发布评论
+    $(".comment-box").toggleClass("hide");
 })
