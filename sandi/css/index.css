@@ -42,22 +42,104 @@
   flex-flow: wrap;
   justify-content: right;
 }
+.nav-list li {
+  position: relative;
+}
+.nav-list i {
+  font-size: 16px;
+}
 .nav-list a {
+  display: inline-block;
   font-size: 22px;
   color: #FFFFFF;
   padding: 20px 0px 16px;
   line-height: 1;
 }
-.nav-list a + a {
+.nav-list li + li {
   margin-left: 50px;
 }
 .nav-list .on {
   font-weight: bold;
   border-bottom: 4px solid #FFFFFF;
 }
-.nav-list a:hover {
+.nav-list li:hover {
   font-weight: bold;
-  border-bottom: 4px solid #FFFFFF;
+}
+.nav-list .dropdown {
+  display: none;
+  position: absolute;
+  padding: 10px;
+  top: 58px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.2);
+}
+.nav-list .dropdown a {
+  min-width: 90px;
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  font-size: 20px;
+  color: #333333;
+  font-weight: normal;
+  text-align: center;
+}
+.nav-list .dropdown a + a {
+  margin-top: 10px;
+}
+.nav-list .dropdown a:hover {
+  font-weight: bold;
+}
+.nav-i {
+  display: none;
+  float: right;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.nav-i i {
+  font-size: 32px;
+  line-height: 14px;
+  color: #ffffff;
+  padding-top: 10px;
+}
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #343434;
+  z-index: 999;
+  text-align: center;
+  overflow-y: scroll;
+}
+.mobile-nav .img-box {
+  margin: 40px auto 20px;
+  float: none;
+}
+.mobile-nav .close {
+  float: right;
+  font-size: 30px;
+  color: #ffffff;
+  margin: 40px 20px 0;
+}
+.mobile-nav ul {
+  padding: 0px 60px 40px;
+}
+.mobile-nav ul i {
+  float: right;
+  margin-top: 2px;
+}
+.mobile-nav li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.mobile-nav li a {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 10px 20px;
 }
 .footer-box {
   width: 100vw;
@@ -79,6 +161,9 @@
   color: #FFFFFF;
   line-height: 1;
 }
+.footer-box li i {
+  display: none;
+}
 .footer-box li a {
   display: block;
   font-size: 14px;
@@ -98,6 +183,15 @@
   line-height: 1;
   text-align: right;
   margin-bottom: 14px;
+}
+.footer-box .open {
+  display: none;
+}
+.footer-box .open h4 {
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 1;
+  font-size: 12px;
 }
 .footer-box .img-box {
   background: #FFFFFF;
@@ -2095,10 +2189,13 @@
 * 响应式适配
 */
 @media only screen and (max-width: 1490px) {
+  .top-head {
+    padding: 20px 40px;
+  }
   .top-head .tell {
     margin-left: 25px;
   }
-  .nav-list a + a {
+  .nav-list li + li {
     margin-left: 20px;
   }
   .prohome-list li {
@@ -2112,7 +2209,7 @@
     justify-content: space-between;
     margin-top: 0;
   }
-  .nav-list a + a {
+  .nav-list li + li {
     margin-left: 0;
   }
   .banner-box {
@@ -2195,6 +2292,9 @@
   }
   .nav-list a {
     padding: 10px 0px;
+  }
+  .nav-list .dropdown {
+    top: 42px;
   }
   .swiper-container {
     height: 680px;
@@ -2413,6 +2513,17 @@
   .nav-list a {
     font-size: 14px;
   }
+  .nav-list i {
+    font-size: 10px;
+  }
+  .nav-list .dropdown {
+    top: 34px;
+  }
+  .nav-list .dropdown a {
+    min-width: 70px;
+    font-size: 14px;
+    padding: 5px 0;
+  }
   .banner-box {
     height: 400px;
   }
@@ -2610,6 +2721,12 @@
     width: 120px;
     height: auto;
   }
+  .nav-list {
+    display: none;
+  }
+  .nav-i {
+    display: block;
+  }
   .search-box h4 {
     font-size: 22px;
     margin-bottom: 20px;
@@ -2681,8 +2798,8 @@
     background: rgba(195, 182, 165, 0.5);
   }
   .home-brand .hover-mask img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     margin-bottom: 10px;
     margin-top: 20px;
   }
@@ -2777,24 +2894,52 @@
     margin-right: 0;
   }
   .footer-box {
-    padding: 30px 20px 40px;
+    padding: 10px 10px 50px;
   }
   .footer-box ul {
     float: inherit;
     width: 100%;
   }
   .footer-box .ewm-box {
+    display: none;
     border-left: none;
-    padding-left: 0;
-    padding-top: 10px;
+    padding: 0;
   }
   .footer-box .ewm-box p {
     float: left;
     line-height: 100px;
     margin-right: 10px;
   }
+  .footer-box li {
+    width: 20%;
+    font-size: 0;
+  }
+  .footer-box li a {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .footer-box li i {
+    display: inline-block;
+  }
+  .footer-box .dropdown {
+    display: none;
+    margin-bottom: 10px;
+  }
+  .footer-box .open {
+    display: inline-block;
+    width: 50%;
+  }
+  .footer-box h4 {
+    padding: 10px 0;
+    white-space: nowrap;
+  }
   .footer-box .img-box {
     display: inline-block;
+    margin-bottom: 0;
+  }
+  .footer-box .bottom {
+    height: 40px;
+    line-height: 40px;
   }
   .about-main .title-box {
     margin-bottom: 40px;
