@@ -11,6 +11,7 @@
     <meta name="applicable-device" content="pc">
     <title>三迪-个人资料</title>
     <link rel="stylesheet" href="../css/reset.min.css" charset="UTF-8" />
+    <link rel="stylesheet" href="../css/animate.min.css" charset="UTF-8" />
     <link rel="stylesheet" href="../css/swiper.min.3.4.2.css" charset="UTF-8" />
     <link rel="stylesheet" href="../css/index.css" charset="UTF-8" />
 
@@ -19,7 +20,8 @@
 <body>
     <!-- 头部 -->
     <div class="top-head clearfix mine-head">
-        <div class="img-box"><a href="../index.html"><img src="../img/home/logo.png"></a></div>    </div>
+        <div class="img-box"><a href="../index.html"><img src="../img/home/logo.png"></a></div>
+    </div>
     <main class="mine-body">
         <div class="mainbox clearfix">
             <div class="mine-nav">
@@ -43,7 +45,7 @@
                     <button class="exit">退出登录</button>
                 </div>
             </div>
-            <div class="mine-r">
+            <div class="mine-r animated divtest" data-animation="fadeInRight">
                 <div class="title">
                     <span></span>
                     <h4>个人资料</h4>
@@ -63,7 +65,8 @@
                         <p>性别</p><input type="text" value="男">
                     </div>
                     <div class="input-box">
-                        <p>联系电话</p><input type="number" oninput="if(value.length>11)value=value.slice(0,11)" value="13031981767">
+                        <p>联系电话</p><input type="number" oninput="if(value.length>11)value=value.slice(0,11)"
+                            value="13031981767">
                     </div>
                     <div class="input-box">
                         <p>店面名称</p><input type="text" value="燕山立交桥二店">

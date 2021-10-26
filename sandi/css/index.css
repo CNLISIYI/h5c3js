@@ -50,7 +50,7 @@
 }
 .nav-list a {
   display: inline-block;
-  font-size: 22px;
+  font-size: 20px;
   color: #FFFFFF;
   padding: 20px 0px 16px;
   line-height: 1;
@@ -69,7 +69,7 @@
   display: none;
   position: absolute;
   padding: 10px;
-  top: 58px;
+  top: 56px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #ffffff;
@@ -558,12 +558,21 @@
   padding: 0 20px;
   font-size: 26px;
   color: #333333;
-  background: url("../img/home/titlebg.png") no-repeat;
-  background-size: 100% 100%;
+}
+.home-prolist i {
+  display: none;
+  position: absolute;
+  bottom: 70px;
+  left: 40px;
+  color: #ffffff;
+  font-size: 32px;
 }
 .home-prolist li:hover h4 {
   font-weight: bold;
   color: #E83428;
+}
+.home-prolist li:hover i {
+  display: block;
 }
 .home-news {
   padding: 0 60px;
@@ -724,6 +733,9 @@
 .home-join .a-box {
   font-size: 0;
   width: 100%;
+}
+.home-join .a-box a:hover {
+  background-color: rgba(254, 64, 52, 0.8);
 }
 .home-join a {
   display: inline-block;
@@ -2812,6 +2824,9 @@
   }
   .home-prolist h4 {
     font-size: 16px;
+  }
+  .home-prolist i {
+    font-size: 26px;
   }
   .home-prolist li {
     max-width: 300px;

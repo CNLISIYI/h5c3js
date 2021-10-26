@@ -11,6 +11,7 @@
     <meta name="applicable-device" content="pc">
     <title>三迪-新闻</title>
     <link rel="stylesheet" href="../css/reset.min.css" charset="UTF-8" />
+    <link rel="stylesheet" href="../css/animate.min.css" charset="UTF-8" />
     <link rel="stylesheet" href="../css/swiper.min.3.4.2.css" charset="UTF-8" />
     <link rel="stylesheet" href="../css/index.css" charset="UTF-8" />
 
@@ -23,7 +24,7 @@
         <div class="nav-i"><i class="iconfont">&#xe6bd;</i></div>
         <span class="tell">加盟专线：400-648-9588</span>
         <ul class="nav-list">
-            <li class="on"><a href="../index.html">首页</a></li>
+            <li><a href="../index.html">首页</a></li>
             <li>
                 <a href="javascript:;">关于<i class="iconfont">&#xe657;</i></a>
                 <div class="dropdown">
@@ -33,7 +34,7 @@
                 </div>
             </li>
             <li><a href="product.html">产品</a></li>
-            <li>
+            <li class="on">
                 <a href="javascript:;">新闻<i class="iconfont">&#xe657;</i></a>
                 <div class="dropdown">
                     <a href="news.html">公司新闻</a>
@@ -51,7 +52,7 @@
             <i class="iconfont close">&#xe702;</i>
             <div class="img-box"><a href="../index.html"><img src="../img/home/logo.png"></a></div>
             <ul>
-                <li class="on"><a href="../index.html">首页</a></li>
+                <li><a href="../index.html">首页</a></li>
                 <li>
                     <a href="javascript:;" class="open">关于<i class="iconfont">&#xe657;</i></a>
                     <div class="dropdown hide">
@@ -61,7 +62,7 @@
                     </div>
                 </li>
                 <li><a href="product.html">产品</a></li>
-                <li>
+                <li class="on">
                     <a href="javascript:;" class="open">新闻<i class="iconfont">&#xe657;</i></a>
                     <div class="dropdown hide">
                         <a href="news.html">公司新闻</a>
@@ -89,13 +90,13 @@
         </div>
     </div>
     <div class="news-home">
-        <div class="title-box">
+        <div class="title-box animated divtest" data-animation="fadeInUp">
             <img src="../img/home/titlei.png">
             <h2>媒体报道</h2>
             <p>COMPANY NEWS</p>
         </div>
         <div class="mainbox">
-            <div class="swiper-container">
+            <div class="swiper-container animated divtest" data-animation="fadeInLeft">
                 <ul class="swiper-wrapper">
                     <li class="swiper-slide">
                         <a target="_blank" href="newsdetail.html" class="clearfix">
@@ -156,7 +157,7 @@
                 </ul>
                 <div class="swiper-pagination"></div>
             </div>
-            <ul class="news-list">
+            <ul class="news-list animated divtest" data-animation="fadeInUp">
                 <li>
                     <a href="newsdetail.html">
                         <div class="img-box"><img src="../img/news/news2.png"></div>
